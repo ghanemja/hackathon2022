@@ -23,6 +23,14 @@
                         <input id="company-id" type="text" class="form-control" placeholder="Company ID" aria-label="Company ID" aria-describedby="basic-addon2">   
                     </div>
                     <div class="col input-group-append">
+                        <select id="selected_cypher" class="form-select" aria-label="Default select example">
+                            <option value="invested_in" selected>Investors</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>                    
+                    </div>
+                    <div class="col input-group-append">
                         <button id="go-button" class="btn btn-outline-secondary" type="button">Go</button>
                     </div>
                 </div>
@@ -87,7 +95,14 @@
         </div>
         
         <script>
-             function draw(company_id) {
+             function draw(company_id, selected) {
+                var cypher_dict = {'invested_in': "MATCH (p:Person)-[r:ACTED_IN]->(m:Movie) where p.name=\'" + company_id + "\' RETURN p,r,m",
+                                  '1': 'apples '}
+
+                var cypher = cypher_dict[selected];
+                console.log(selected)
+                console.log(cypher_dict[selected])
+                console.log(cypher)
                 var config = {
                     container_id: "viz",
                     server_url: "bolt://44.201.14.176:7687",
@@ -106,7 +121,7 @@
                             caption: "title"
                         }
                     },
-                    initial_cypher: "MATCH (p:Person)-[r:ACTED_IN]->(m:Movie) where p.name=\'" + company_id + "\' RETURN p,r,m"
+                    initial_cypher: cypher
                 }
                 console.log(company_id)
                 console.log('drawn')
@@ -115,11 +130,11 @@
 
             };
 
-            window.onload = draw("{{ company_id }}")
+            window.onload = draw("{{ company_id }}","{{ selected }}")
 
             document.getElementById('go-button').addEventListener("click",
             function get_url() {
-                var url = 'http://localhost:5000/?company-id=' +  document.getElementById("company-id").value;
+                var url = 'http://localhost:5000/?company-id=' +  document.getElementById("company-id").value + "&selected_cypher=" + document.getElementById("selected_cypher").value;
                 window.location.href = url;
             });
         </script>

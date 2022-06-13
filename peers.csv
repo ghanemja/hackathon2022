@@ -1,31 +1,501 @@
-s_company_id,s_company_name,p_company_id,p_company_name
-55815-22 ,Coinbase,178355-08,Lime
-55815-22 ,Coinbase,56265-94,Carta
-55815-22,Coinbase,53780-77,Wish
-55815-22,Coinbase,54462-25,Rescale
-55815-22,Coinbase,51777-73,Slack
-55815-22,Coinbase,57523-60,DataRobot
-55815-22,Coinbase,61093-90,Anyroad
-55815-22,Coinbase,97867-54,Checkr
-55815-22,Coinbase,162439-03,Astranis
-55815-22,Coinbase,162900-82,Hippo Enterprises
-51261-67 ,Airbnb,51777-73,Slack
-51261-67 ,Airbnb,57227-95,Robinhood Markets
-51261-67,Airbnb,51136-75,Uber
-51261-67,Airbnb,53780-77,Wish
-51261-67,Airbnb,55758-97,Gusto
-51261-67,Airbnb,55765-18,Snap Group
-51261-67,Airbnb,57271-15,Planet Labs
-51261-67,Airbnb,43117-84,Palantir Technologies
-51261-67,Airbnb,178355-08,Lime
-51261-67,Airbnb,61371-46,Magic Leap
-46488-07,SpaceX,51261-67,Airbnb
-46488-07,SpaceX,55758-97,Gusto
+s_company_id,s_company_name,peer_id,peer_name
+63628-21,ByteDance,127257-58,Meituan
+63628-21,ByteDance,118715-14,Didi Global
+63628-21,ByteDance,227056-78,Full Truck Alliance
+63628-21,ByteDance,130185-82,SenseTime
+63628-21,ByteDance,224135-56,XtalPi
+63628-21,ByteDance,53780-77,Wish
+63628-21,ByteDance,123320-44,Zuoyebang
+63628-21,ByteDance,184540-78,Pony ai
+63628-21,ByteDance,101368-90,GrubMarket
+63628-21,ByteDance,51401-80,Xiaomi Technology
 46488-07,SpaceX,56265-94,Carta
-46488-07,SpaceX,51420-07,Lookout
-46488-07,SpaceX,102075-04,Relativity
-46488-07,SpaceX,162439-03,Astranis
 46488-07,SpaceX,54782-29,Stripe
-46488-07,SpaceX,58167-28,DoorDash
+46488-07,SpaceX,57227-95,Robinhood Markets
+46488-07,SpaceX,55758-97,Gusto
+46488-07,SpaceX,181114-30,Ro
 46488-07,SpaceX,51777-73,Slack
-46488-07,SpaceX,61488-73,Cohesity
+46488-07,SpaceX,50894-65,Lyft
+46488-07,SpaceX,64901-80,Epic Games
+46488-07,SpaceX,225830-98,Bird Rides
+46488-07,SpaceX,63690-94,Flexport
+42936-49,Klarna,225830-98,Bird Rides
+42936-49,Klarna,59199-40,Databricks
+42936-49,Klarna,56265-94,Carta
+42936-49,Klarna,54782-29,Stripe
+42936-49,Klarna,64901-80,Epic Games
+42936-49,Klarna,107633-08,Bolt Financial
+42936-49,Klarna,57227-95,Robinhood Markets
+42936-49,Klarna,46488-07,SpaceX
+42936-49,Klarna,55319-68,Dataminr
+42936-49,Klarna,51777-73,Slack
+221504-68,Checkout com,51136-75,Uber
+221504-68,Checkout com,54782-29,Stripe
+221504-68,Checkout com,181114-30,Ro
+221504-68,Checkout com,59199-40,Databricks
+221504-68,Checkout com,57523-60,DataRobot
+221504-68,Checkout com,51261-67,Airbnb
+221504-68,Checkout com,234177-04,Loft
+221504-68,Checkout com,55815-22,Coinbase
+221504-68,Checkout com,42530-05,Alibaba Group
+221504-68,Checkout com,64901-80,Epic Games
+55446-58,Instacart,55758-97,Gusto
+55446-58,Instacart,56265-94,Carta
+55446-58,Instacart,58167-28,DoorDash
+55446-58,Instacart,57227-95,Robinhood Markets
+55446-58,Instacart,51777-73,Slack
+55446-58,Instacart,46488-07,SpaceX
+55446-58,Instacart,54782-29,Stripe
+55446-58,Instacart,63690-94,Flexport
+55446-58,Instacart,43117-84,Palantir Technologies
+55446-58,Instacart,54271-18,YourMechanic
+59199-40,Databricks,181114-30,Ro
+59199-40,Databricks,57227-95,Robinhood Markets
+59199-40,Databricks,50894-65,Lyft
+59199-40,Databricks,56265-94,Carta
+59199-40,Databricks,51261-67,Airbnb
+59199-40,Databricks,51136-75,Uber
+59199-40,Databricks,46488-07,SpaceX
+59199-40,Databricks,55758-97,Gusto
+59199-40,Databricks,64901-80,Epic Games
+59199-40,Databricks,51777-73,Slack
+64901-80,Epic Games,46488-07,SpaceX
+64901-80,Epic Games,56265-94,Carta
+64901-80,Epic Games,55319-68,Dataminr
+64901-80,Epic Games,50894-65,Lyft
+64901-80,Epic Games,52950-43,Pinterest
+64901-80,Epic Games,43117-84,Palantir Technologies
+64901-80,Epic Games,57227-95,Robinhood Markets
+64901-80,Epic Games,54782-29,Stripe
+64901-80,Epic Games,181114-30,Ro
+64901-80,Epic Games,57271-15,Planet Labs
+437607-19,FTX Group,471283-39,Atmosfy
+437607-19,FTX Group,162465-67,Quite Bright Films
+437607-19,FTX Group,55486-27,Edubridge
+437607-19,FTX Group,459470-35,Fowlerville Veterinary Clinic
+437607-19,FTX Group,173922-22,Indya Estates
+437607-19,FTX Group,112468-69,Top Tips
+437607-19,FTX Group,436271-32,Deliver Up
+437607-19,FTX Group,221849-11,Industrias Princesa
+437607-19,FTX Group,152468-02,IWAG Ingenieure
+437607-19,FTX Group,58455-37,Sooma
+52241-32,Fanatics,84804-13,GitLab
+52241-32,Fanatics,118455-94,Katerra
+52241-32,Fanatics,181114-30,Ro
+52241-32,Fanatics,55758-97,Gusto
+52241-32,Fanatics,52258-60,Prosper Marketplace
+52241-32,Fanatics,51136-75,Uber
+52241-32,Fanatics,51196-51,Cloudera
+52241-32,Fanatics,53944-57,Zipline
+52241-32,Fanatics,55319-68,Dataminr
+52241-32,Fanatics,52598-44,Flipkart
+59358-16,Chime Group,63684-28,PRISM Plastics
+59358-16,Chime Group,138118-78,QTI Sensing Solutions
+59358-16,Chime Group,244814-23,Color Burst Landscapes
+59358-16,Chime Group,112180-51,Maliterie
+59358-16,Chime Group,454524-85,Daly Seven  Fairfield Inn Pineville 
+59358-16,Chime Group,267381-37,Lateral  Certain Assets 
+59358-16,Chime Group,163460-71,Grainland Moree
+59358-16,Chime Group,107195-95,EatSocial
+59358-16,Chime Group,109894-42,Delfi Technologies  Germany 
+59358-16,Chime Group,451795-15,Tall City Brine
+115437-61,BYJU S,59199-40,Databricks
+115437-61,BYJU S,51136-75,Uber
+115437-61,BYJU S,51261-67,Airbnb
+115437-61,BYJU S,64901-80,Epic Games
+115437-61,BYJU S,50894-65,Lyft
+115437-61,BYJU S,181114-30,Ro
+115437-61,BYJU S,97319-89,Impossible Foods
+115437-61,BYJU S,57227-95,Robinhood Markets
+115437-61,BYJU S,52598-44,Flipkart
+115437-61,BYJU S,42166-63,DocuSign
+64710-82,Xiaohongshu,178459-75,UISEE
+64710-82,Xiaohongshu,170277-04,FlashEX
+64710-82,Xiaohongshu,139896-19,Transwarp  Big Data 
+64710-82,Xiaohongshu,251516-62,Immunochina Pharmaceuticals
+64710-82,Xiaohongshu,112798-54,MicroTech
+64710-82,Xiaohongshu,55280-53,BGI Genomics
+64710-82,Xiaohongshu,171036-28,Zongmu
+64710-82,Xiaohongshu,264442-42,Thousand Oaks Biopharmaceuticals
+64710-82,Xiaohongshu,65211-31,Yuanfudao
+64710-82,Xiaohongshu,230036-41,YiXue Squirrel AI
+231806-53,J T Express,416556-64,Biren Technology
+231806-53,J T Express,416706-40,MicroPort CardioFlow
+231806-53,J T Express,127257-58,Meituan
+231806-53,J T Express,182479-42,Guangzhou Xiaopeng Motors Technology
+231806-53,J T Express,65211-31,Yuanfudao
+231806-53,J T Express,224135-56,XtalPi
+231806-53,J T Express,279390-52,Fiture Technology
+231806-53,J T Express,130185-82,SenseTime
+231806-53,J T Express,123320-44,Zuoyebang
+231806-53,J T Express,433088-92,RemeGen
+65211-31,Yuanfudao,112798-54,MicroTech
+65211-31,Yuanfudao,433088-92,RemeGen
+65211-31,Yuanfudao,416556-64,Biren Technology
+65211-31,Yuanfudao,130185-82,SenseTime
+65211-31,Yuanfudao,127257-58,Meituan
+65211-31,Yuanfudao,111697-75,Segway Ninebot
+65211-31,Yuanfudao,227056-78,Full Truck Alliance
+65211-31,Yuanfudao,234359-20,Hinova Pharmaceuticals
+65211-31,Yuanfudao,224135-56,XtalPi
+65211-31,Yuanfudao,156723-13,Horizon Robotics
+54805-51,Discord,56265-94,Carta
+54805-51,Discord,46488-07,SpaceX
+54805-51,Discord,162439-03,Astranis
+54805-51,Discord,54782-29,Stripe
+54805-51,Discord,51777-73,Slack
+54805-51,Discord,54220-06,AngelList
+54805-51,Discord,185001-58,Bloom Institute of Technology
+54805-51,Discord,55758-97,Gusto
+54805-51,Discord,55446-58,Instacart
+54805-51,Discord,148927-78,Clearco
+117191-17,Gopuff,53944-57,Zipline
+117191-17,Gopuff,59199-40,Databricks
+117191-17,Gopuff,52838-11,Warby Parker
+117191-17,Gopuff,51391-00,Turo
+117191-17,Gopuff,61313-23,Casper Sleep
+117191-17,Gopuff,54309-16,Postmates
+117191-17,Gopuff,57227-95,Robinhood Markets
+117191-17,Gopuff,46488-07,SpaceX
+117191-17,Gopuff,84804-13,GitLab
+117191-17,Gopuff,55319-68,Dataminr
+56502-19,Ripple,56265-94,Carta
+56502-19,Ripple,55815-22,Coinbase
+56502-19,Ripple,63690-94,Flexport
+56502-19,Ripple,51777-73,Slack
+56502-19,Ripple,57227-95,Robinhood Markets
+56502-19,Ripple,178355-08,Lime
+56502-19,Ripple,55446-58,Instacart
+56502-19,Ripple,55758-97,Gusto
+56502-19,Ripple,58167-28,DoorDash
+56502-19,Ripple,54271-18,YourMechanic
+65909-44,Blockchain com,51261-67,Airbnb
+65909-44,Blockchain com,56265-94,Carta
+65909-44,Blockchain com,55758-97,Gusto
+65909-44,Blockchain com,43117-84,Palantir Technologies
+65909-44,Blockchain com,53373-34,Nextdoor
+65909-44,Blockchain com,54782-29,Stripe
+65909-44,Blockchain com,225830-98,Bird Rides
+65909-44,Blockchain com,46488-07,SpaceX
+65909-44,Blockchain com,178355-08,Lime
+65909-44,Blockchain com,51777-73,Slack
+226883-35,OpenSea,97662-70,Ethereum  Financial Software 
+226883-35,OpenSea,66032-65,Stacks   Software Development Applications 
+226883-35,OpenSea,226905-76,Dapper Labs
+226883-35,OpenSea,224072-83,BlockFi
+226883-35,OpenSea,327465-28,Axie Infinity
+226883-35,OpenSea,277738-75,FTX
+226883-35,OpenSea,462306-97,Yield Guild Games
+226883-35,OpenSea,265169-71,The Graph
+226883-35,OpenSea,221464-81,Basis
+226883-35,OpenSea,183309-13,0x
+92115-91,Grammarly,51777-73,Slack
+92115-91,Grammarly,54309-16,Postmates
+92115-91,Grammarly,52379-92,Domo
+92115-91,Grammarly,55758-97,Gusto
+92115-91,Grammarly,53526-34,Omada
+92115-91,Grammarly,51261-67,Airbnb
+92115-91,Grammarly,55319-68,Dataminr
+92115-91,Grammarly,162439-03,Astranis
+92115-91,Grammarly,52109-11,Nutanix
+92115-91,Grammarly,57227-95,Robinhood Markets
+221532-13,Devoted Health,181114-30,Ro
+221532-13,Devoted Health,51777-73,Slack
+221532-13,Devoted Health,50894-65,Lyft
+221532-13,Devoted Health,54782-29,Stripe
+221532-13,Devoted Health,57227-95,Robinhood Markets
+221532-13,Devoted Health,55758-97,Gusto
+221532-13,Devoted Health,97319-89,Impossible Foods
+221532-13,Devoted Health,63690-94,Flexport
+221532-13,Devoted Health,58167-28,DoorDash
+221532-13,Devoted Health,51261-67,Airbnb
+223456-87,JUUL,58167-28,DoorDash
+223456-87,JUUL,99788-77,PRENAV
+223456-87,JUUL,54271-18,YourMechanic
+223456-87,JUUL,112941-64,Eight Sleep
+223456-87,JUUL,46488-07,SpaceX
+223456-87,JUUL,110488-87,Rubrik
+223456-87,JUUL,60685-21,Ring
+223456-87,JUUL,51777-73,Slack
+223456-87,JUUL,97437-16,Thrive Market
+223456-87,JUUL,54800-92,SonicEnergy
+153289-81,Bitmain,224072-83,BlockFi
+153289-81,Bitmain,222513-67,Theta Network
+153289-81,Bitmain,53780-77,Wish
+153289-81,Bitmain,277738-75,FTX
+153289-81,Bitmain,66032-65,Stacks   Software Development Applications 
+153289-81,Bitmain,226905-76,Dapper Labs
+153289-81,Bitmain,340802-92,Eco  Financial Software 
+153289-81,Bitmain,229864-96,TrustToken
+153289-81,Bitmain,118715-14,Didi Global
+153289-81,Bitmain,231098-50,Nervos
+93537-46,Biosplice Therapeutics,131248-81,Amylyx
+93537-46,Biosplice Therapeutics,399420-64,EQRx
+93537-46,Biosplice Therapeutics,126145-45,Science 37
+93537-46,Biosplice Therapeutics,98956-00,Hyperfine
+93537-46,Biosplice Therapeutics,134583-13,Egenesis
+93537-46,Biosplice Therapeutics,168773-32,Fair
+93537-46,Biosplice Therapeutics,126490-60,Freenome
+93537-46,Biosplice Therapeutics,168782-86,Ada Support
+93537-46,Biosplice Therapeutics,61437-16,ShotTracker
+93537-46,Biosplice Therapeutics,57271-15,Planet Labs
+299326-60,Goodleap,59199-40,Databricks
+299326-60,Goodleap,42936-49,Klarna
+299326-60,Goodleap,55319-68,Dataminr
+299326-60,Goodleap,64901-80,Epic Games
+299326-60,Goodleap,51136-75,Uber
+299326-60,Goodleap,53736-85,Addepar
+299326-60,Goodleap,54192-97,FanDuel
+299326-60,Goodleap,54309-16,Postmates
+299326-60,Goodleap,52686-01,AvidXchange
+299326-60,Goodleap,60685-21,Ring
+338635-54,Xingsheng Selected,123320-44,Zuoyebang
+338635-54,Xingsheng Selected,127257-58,Meituan
+338635-54,Xingsheng Selected,227056-78,Full Truck Alliance
+338635-54,Xingsheng Selected,433088-92,RemeGen
+338635-54,Xingsheng Selected,118715-14,Didi Global
+338635-54,Xingsheng Selected,99609-31,Ant Group
+338635-54,Xingsheng Selected,184540-78,Pony ai
+338635-54,Xingsheng Selected,182479-42,Guangzhou Xiaopeng Motors Technology
+338635-54,Xingsheng Selected,454771-63,Ttpod
+338635-54,Xingsheng Selected,130185-82,SenseTime
+153064-27,Getir,115437-61,BYJU S
+153064-27,Getir,42936-49,Klarna
+153064-27,Getir,107633-08,Bolt Financial
+153064-27,Getir,117363-88,UiPath
+153064-27,Getir,399539-80,Hopin
+153064-27,Getir,292887-01,DealShare
+153064-27,Getir,226102-87,Brex
+153064-27,Getir,59199-40,Databricks
+153064-27,Getir,52258-60,Prosper Marketplace
+153064-27,Getir,56174-23,Zomato
+100744-84,Airtable,54782-29,Stripe
+100744-84,Airtable,53373-34,Nextdoor
+100744-84,Airtable,57227-95,Robinhood Markets
+100744-84,Airtable,54220-06,AngelList
+100744-84,Airtable,46488-07,SpaceX
+100744-84,Airtable,56265-94,Carta
+100744-84,Airtable,55446-58,Instacart
+100744-84,Airtable,97319-89,Impossible Foods
+100744-84,Airtable,55758-97,Gusto
+100744-84,Airtable,52950-43,Pinterest
+171036-28,Zongmu,234359-20,Hinova Pharmaceuticals
+171036-28,Zongmu,455105-44,Innotron
+171036-28,Zongmu,178459-75,UISEE
+171036-28,Zongmu,156723-13,Horizon Robotics
+171036-28,Zongmu,231910-30,CiDi
+171036-28,Zongmu,267183-10,Guangzhou Creative Biosciences
+171036-28,Zongmu,224124-31,Aibee
+171036-28,Zongmu,434676-16,SVOLT
+171036-28,Zongmu,416556-64,Biren Technology
+171036-28,Zongmu,53683-39,MicuRx Pharmaceuticals
+178355-71,Rippling,55815-22,Coinbase
+178355-71,Rippling,56265-94,Carta
+178355-71,Rippling,57227-95,Robinhood Markets
+178355-71,Rippling,179718-76,Atrium  Legal Services  B2B  
+178355-71,Rippling,54462-25,Rescale
+178355-71,Rippling,55446-58,Instacart
+178355-71,Rippling,58167-28,DoorDash
+178355-71,Rippling,178355-08,Lime
+178355-71,Rippling,51777-73,Slack
+178355-71,Rippling,97437-16,Thrive Market
+62015-59,Global Switch Holdings,265541-05,Xiner
+62015-59,Global Switch Holdings,433422-82,ENT Evolution
+62015-59,Global Switch Holdings,118152-91,AI Speech
+62015-59,Global Switch Holdings,279339-31,ZStack
+62015-59,Global Switch Holdings,436288-78,Enzymaster
+62015-59,Global Switch Holdings,436612-24,Jingwei Hirain
+62015-59,Global Switch Holdings,61986-61,FunPlus
+62015-59,Global Switch Holdings,61362-64,HoloNet Security
+62015-59,Global Switch Holdings,164194-03,Hisky Medical
+62015-59,Global Switch Holdings,338532-13,Yiming Cell
+149258-71,Celonis,121028-14,HyperScience
+149258-71,Celonis,55082-71,Delivery Hero
+149258-71,Celonis,104383-72,Revolut
+149258-71,Celonis,52811-74,One Medical
+149258-71,Celonis,55246-60,Cabify
+149258-71,Celonis,64334-26,Deliveroo
+149258-71,Celonis,97309-09,CARTO
+149258-71,Celonis,157505-32,Virta Health
+149258-71,Celonis,54782-29,Stripe
+149258-71,Celonis,51071-77,AppNexus
+466020-19,Weilong Delicious Global Holdings,455105-44,Innotron
+466020-19,Weilong Delicious Global Holdings,224124-31,Aibee
+466020-19,Weilong Delicious Global Holdings,433736-02,CosmoPlat
+466020-19,Weilong Delicious Global Holdings,169686-28,OncoImmune
+466020-19,Weilong Delicious Global Holdings,221989-78,Spacety
+466020-19,Weilong Delicious Global Holdings,231910-30,CiDi
+466020-19,Weilong Delicious Global Holdings,340753-60,EdgeMedical
+466020-19,Weilong Delicious Global Holdings,340939-18,Marching Power
+466020-19,Weilong Delicious Global Holdings,325504-63,Leads Biolabs
+466020-19,Weilong Delicious Global Holdings,266963-23,DEEPEXI
+111099-25,Swiggy,59199-40,Databricks
+111099-25,Swiggy,51136-75,Uber
+111099-25,Swiggy,50894-65,Lyft
+111099-25,Swiggy,52598-44,Flipkart
+111099-25,Swiggy,53833-15,SoFi
+111099-25,Swiggy,43117-84,Palantir Technologies
+111099-25,Swiggy,51261-67,Airbnb
+111099-25,Swiggy,55758-97,Gusto
+111099-25,Swiggy,115437-61,BYJU S
+111099-25,Swiggy,181114-30,Ro
+101664-91,Lalamove,118715-14,Didi Global
+101664-91,Lalamove,127257-58,Meituan
+101664-91,Lalamove,63628-21,ByteDance
+101664-91,Lalamove,62422-03,Insilico Medicine
+101664-91,Lalamove,123320-44,Zuoyebang
+101664-91,Lalamove,101368-90,GrubMarket
+101664-91,Lalamove,51401-80,Xiaomi Technology
+101664-91,Lalamove,224135-56,XtalPi
+101664-91,Lalamove,184540-78,Pony ai
+101664-91,Lalamove,227056-78,Full Truck Alliance
+57686-86,Figma,46488-07,SpaceX
+57686-86,Figma,84804-13,GitLab
+57686-86,Figma,160962-49,Parsley Health
+57686-86,Figma,181114-30,Ro
+57686-86,Figma,57227-95,Robinhood Markets
+57686-86,Figma,55815-22,Coinbase
+57686-86,Figma,64708-30,Opendoor Technologies
+57686-86,Figma,54271-18,YourMechanic
+57686-86,Figma,53944-57,Zipline
+57686-86,Figma,54622-72,Beyond Meat
+53903-53,Reddit,182816-11,Future Family
+53903-53,Reddit,56265-94,Carta
+53903-53,Reddit,66032-65,Stacks   Software Development Applications 
+53903-53,Reddit,97437-16,Thrive Market
+53903-53,Reddit,162439-03,Astranis
+53903-53,Reddit,178355-71,Rippling
+53903-53,Reddit,169207-66,Petal
+53903-53,Reddit,55446-58,Instacart
+53903-53,Reddit,150075-91,HeadSpin
+53903-53,Reddit,63994-60,Jackpocket
+54522-55,Talkdesk,63690-94,Flexport
+54522-55,Talkdesk,56265-94,Carta
+54522-55,Talkdesk,54782-29,Stripe
+54522-55,Talkdesk,53373-34,Nextdoor
+54522-55,Talkdesk,66223-18,Branch
+54522-55,Talkdesk,57271-15,Planet Labs
+54522-55,Talkdesk,56502-19,Ripple
+54522-55,Talkdesk,108107-02,Virgin Hyperloop
+54522-55,Talkdesk,55815-22,Coinbase
+54522-55,Talkdesk,57227-95,Robinhood Markets
+266344-84,Thrasio,120154-96,Nurx
+266344-84,Thrasio,169525-63,Embrace  Business Productivity Software 
+266344-84,Thrasio,53964-10,Highlight
+266344-84,Thrasio,128094-85,Metadata
+266344-84,Thrasio,112941-64,Eight Sleep
+266344-84,Thrasio,433832-14,Lendtable
+266344-84,Thrasio,52838-11,Warby Parker
+266344-84,Thrasio,156479-77,BillionToOne
+266344-84,Thrasio,227120-68,Facet  Multimedia and Design Software 
+266344-84,Thrasio,155925-46,Boom Supersonic
+56560-42,Digital Currency Group,55758-97,Gusto
+56560-42,Digital Currency Group,57227-95,Robinhood Markets
+56560-42,Digital Currency Group,111020-59,Honor
+56560-42,Digital Currency Group,51391-00,Turo
+56560-42,Digital Currency Group,51777-73,Slack
+56560-42,Digital Currency Group,53484-04,Life360
+56560-42,Digital Currency Group,162299-44,Drop  Services  B2C Non Financial  
+56560-42,Digital Currency Group,225830-98,Bird Rides
+56560-42,Digital Currency Group,56265-94,Carta
+56560-42,Digital Currency Group,91077-49,HoneyBook
+234559-90,KuCoin,97538-77,SKSpruce
+234559-90,KuCoin,232174-54,Blockcloud
+234559-90,KuCoin,489944-71,Lootex
+234559-90,KuCoin,268499-89,Shijiazhuang Junlebao Dairy
+234559-90,KuCoin,232064-38,Xentral
+234559-90,KuCoin,230684-86,Oasis Labs
+234559-90,KuCoin,66002-23,Tongdun
+234559-90,KuCoin,231358-24,MoonX
+234559-90,KuCoin,104660-65,ObEN
+234559-90,KuCoin,439278-94,Polkastarter
+55250-20,OutSystems,97319-89,Impossible Foods
+55250-20,OutSystems,51736-87,Coupang
+55250-20,OutSystems,57227-95,Robinhood Markets
+55250-20,OutSystems,150075-91,HeadSpin
+55250-20,OutSystems,107633-08,Bolt Financial
+55250-20,OutSystems,51258-07,Twilio
+55250-20,OutSystems,63978-76,Forge Global
+55250-20,OutSystems,64334-26,Deliveroo
+55250-20,OutSystems,65261-08,FreshBooks
+55250-20,OutSystems,166357-54,Carbon Health
+60104-71,ServiceTitan,54866-89,SmartAsset
+60104-71,ServiceTitan,162900-82,Hippo Enterprises
+60104-71,ServiceTitan,55319-68,Dataminr
+60104-71,ServiceTitan,55139-05,Tradeshift
+60104-71,ServiceTitan,223380-37,Unqork
+60104-71,ServiceTitan,61313-23,Casper Sleep
+60104-71,ServiceTitan,51258-07,Twilio
+60104-71,ServiceTitan,225830-98,Bird Rides
+60104-71,ServiceTitan,234177-04,Loft
+60104-71,ServiceTitan,54309-16,Postmates
+170744-32,HeyTea,130185-82,SenseTime
+170744-32,HeyTea,277385-14,Dingdong Maicai
+170744-32,HeyTea,227056-78,Full Truck Alliance
+170744-32,HeyTea,65211-31,Yuanfudao
+170744-32,HeyTea,433088-92,RemeGen
+170744-32,HeyTea,416706-40,MicroPort CardioFlow
+170744-32,HeyTea,233313-58,4Paradigm
+170744-32,HeyTea,112798-54,MicroTech
+170744-32,HeyTea,53683-39,MicuRx Pharmaceuticals
+170744-32,HeyTea,469337-59,KeyMed Biosciences
+64126-90,N26,54782-29,Stripe
+64126-90,N26,155878-21,Truebill
+64126-90,N26,63690-94,Flexport
+64126-90,N26,51081-40,23andMe
+64126-90,N26,64334-26,Deliveroo
+64126-90,N26,60207-13,What3words
+64126-90,N26,180502-93,Kavak
+64126-90,N26,54220-06,AngelList
+64126-90,N26,54622-72,Beyond Meat
+64126-90,N26,100744-84,Airtable
+85669-30,Klaviyo,63690-94,Flexport
+85669-30,Klaviyo,234177-04,Loft
+85669-30,Klaviyo,57523-60,DataRobot
+85669-30,Klaviyo,64708-30,Opendoor Technologies
+85669-30,Klaviyo,89490-70,SecurityScorecard
+85669-30,Klaviyo,54782-29,Stripe
+85669-30,Klaviyo,51136-75,Uber
+85669-30,Klaviyo,181114-30,Ro
+85669-30,Klaviyo,56149-21,Zenefits
+85669-30,Klaviyo,182923-30,Ethos Life
+178342-84,Northvolt,42936-49,Klarna
+178342-84,Northvolt,52829-38,Neo4j
+178342-84,Northvolt,54299-17,Zettle by PayPal
+178342-84,Northvolt,58873-60,Fishbrain
+178342-84,Northvolt,434111-41,ClimateView
+178342-84,Northvolt,115088-68,Embracer Group
+178342-84,Northvolt,179035-48,Varjo
+178342-84,Northvolt,166649-68,Graphcore
+178342-84,Northvolt,90916-12,Tink  Financial Software 
+178342-84,Northvolt,42924-16,Mathem
+64152-28,Tanium,58548-79,Boxed
+64152-28,Tanium,50894-65,Lyft
+64152-28,Tanium,59273-38,Netskope
+64152-28,Tanium,64901-80,Epic Games
+64152-28,Tanium,52950-43,Pinterest
+64152-28,Tanium,54309-16,Postmates
+64152-28,Tanium,225830-98,Bird Rides
+64152-28,Tanium,61371-46,Magic Leap
+64152-28,Tanium,51618-97,Dynamic Signal
+64152-28,Tanium,126271-54,Better
+101984-86,Niantic,51145-39,Dropbox
+101984-86,Niantic,60685-21,Ring
+101984-86,Niantic,54309-16,Postmates
+101984-86,Niantic,50900-50,Block
+101984-86,Niantic,57271-15,Planet Labs
+101984-86,Niantic,55446-58,Instacart
+101984-86,Niantic,111020-59,Honor
+101984-86,Niantic,97355-26,MasterClass
+101984-86,Niantic,55758-97,Gusto
+101984-86,Niantic,50894-65,Lyft
+61868-17,OYO Rooms,85227-49,Innovaccer
+61868-17,OYO Rooms,56174-23,Zomato
+61868-17,OYO Rooms,103391-02,Vedantu
+61868-17,OYO Rooms,162754-03,Triller
+61868-17,OYO Rooms,111806-29,Urban Company
+61868-17,OYO Rooms,267653-71,Pixxel
+61868-17,OYO Rooms,54220-78,Ola
+61868-17,OYO Rooms,295444-72,Bijak
+61868-17,OYO Rooms,264702-79,Instoried
+61868-17,OYO Rooms,327445-48,Jupiter  Financial Software 

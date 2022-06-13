@@ -8,14 +8,15 @@ CORS(app)
 @app.route('/',methods = ['POST', 'GET'] )
 def index():
     if request.method == 'GET':
-        company_id = request.args.get('companyId')
+        company_id = request.args.get('company-id')
+        selected = request.args.get('selected_cypher')
         if company_id:
             investors_file = "investors.csv"
             peers_file = "peers.csv"
             try:
                 with open(investors_file) as invest:
                     with open(peers_file) as peer:
-                        return render_template("index.html", investors=invest, peers=peer, company_id=company_id)
+                        return render_template("index.html", investors=invest, peers=peer, company_id=company_id, selected=selected)
             except:
                 return render_template("index.html", company_id=company_id)
         else: 

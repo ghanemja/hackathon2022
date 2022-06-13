@@ -1,34 +1,501 @@
 s_company_id,s_company_name,investor_id,investor_name
-51261-67,Airbnb,40420-36,Y CombinatorCapital
-51261-67,Airbnb,54172-81,Plug and Play Tech Center
-51261-67,Airbnb,58004-02,Bpifrance
-51261-67,Airbnb,51322-24,SOSV
-51261-67,Airbnb,40380-31,Keiretsu Forum
-51261-67,Airbnb,10066-15,Kohlberg Kravis Roberts
-51261-67,Airbnb,11215-54,IDG Capital
-51261-67,Airbnb,51022-00,Kima Ventures
-51261-67,Airbnb,42282-46,Enterprise Ireland
-51261-67,Airbnb,56157-94,Start Up Chile
-51261-67,Airbnb,10014-49,Blackstone
-55446-58,Instacart,54172-81,Plug and Play Tech Center
-55446-58,Instacart,58004-02,Bpifrance
-55446-58,Instacart,51322-24,SOSV
-55446-58,Instacart,40380-31,Keiretsu Forum
-55446-58,Instacart,10066-15,Kohlberg Kravis Roberts
-55446-58,Instacart,11215-54,IDG Capital
-55446-58,Instacart,51022-00,Kima Ventures
-55446-58,Instacart,42282-46,Enterprise Ireland
-55446-58,Instacart,56157-94,Start Up Chile
-55446-58,Instacart,10014-49,Blackstone
-55446-58,Instacart,11251-81,New Enterprise Associates
-169143-76,Waymo,40420-36,Y Combinator
-169143-76,Waymo,54172-81,Plug and Play Tech Center
-169143-76,Waymo,58004-02,Bpifrance
-169143-76,Waymo,51322-24,SOSV
-169143-76,Waymo,40380-31,Keiretsu Forum
-169143-76,Waymo,10066-15,Kohlberg Kravis Roberts
-169143-76,Waymo,11215-54,IDG Capital
-169143-76,Waymo,51022-00,Kima Ventures
-169143-76,Waymo,42282-46,Enterprise Ireland
-169143-76,Waymo,56157-94,Start Up Chile
-169143-76,Waymo,10014-49,Blackstone
+63628-21,ByteDance,264454-75,Beijing Automotive Group Industrial Investment
+63628-21,ByteDance,11191-96,Greylock Partners
+63628-21,ByteDance,40773-97,DST Global
+63628-21,ByteDance,56718-46,Amino Capital
+63628-21,ByteDance,60478-12,Future Perfect Ventures
+63628-21,ByteDance,40732-48,Atomico
+63628-21,ByteDance,122902-30,Janus Henderson Investors
+63628-21,ByteDance,56697-76,TenOneTen Ventures
+63628-21,ByteDance,10134-73,Bessemer Venture Partners
+63628-21,ByteDance,432776-53,Lennar Ventures
+46488-07,SpaceX,60007-78,Montage Ventures
+46488-07,SpaceX,10134-73,Bessemer Venture Partners
+46488-07,SpaceX,40773-97,DST Global
+46488-07,SpaceX,54172-81,Plug and Play Tech Center
+46488-07,SpaceX,437730-67,XN
+46488-07,SpaceX,56822-59,SternAegis Ventures
+46488-07,SpaceX,41716-90,Andreessen Horowitz
+46488-07,SpaceX,11261-89,Crosslink Capital
+46488-07,SpaceX,124929-82,Gaingels
+46488-07,SpaceX,53906-41,Social Capital
+42936-49,Klarna,40420-36,Y Combinator
+42936-49,Klarna,50980-69,Lerer Hippeau Ventures
+42936-49,Klarna,56010-97,Draper Associates
+42936-49,Klarna,60007-78,Montage Ventures
+42936-49,Klarna,162301-60,Veronorte
+42936-49,Klarna,52815-70,Tuesday Capital
+42936-49,Klarna,65064-07,Cisco Investments
+42936-49,Klarna,58781-35,137 Ventures
+42936-49,Klarna,56199-52,CRCM Ventures
+42936-49,Klarna,10139-41,Accel
+221504-68,Checkout com,11203-21,GGV Capital
+221504-68,Checkout com,51639-76,Correlation Ventures
+221504-68,Checkout com,11132-20,Atlas Venture
+221504-68,Checkout com,49063-60,GV
+221504-68,Checkout com,267563-89,Lava Walk Ventures
+221504-68,Checkout com,163577-26,Red Badge Management
+221504-68,Checkout com,60007-78,Montage Ventures
+221504-68,Checkout com,54701-56,Breyer Capital
+221504-68,Checkout com,55261-00,Right Side Capital Management
+221504-68,Checkout com,55618-12,Red Sea Ventures
+55446-58,Instacart,57349-27,Scrum Ventures
+55446-58,Instacart,152532-37,Temerity Capital Partners
+55446-58,Instacart,118661-50,Blue Collective
+55446-58,Instacart,221796-19,QBE Ventures
+55446-58,Instacart,11262-61,Motorola Solutions Venture Capital
+55446-58,Instacart,164226-25,Bryant Stibel
+55446-58,Instacart,57697-12,Streamlined Ventures
+55446-58,Instacart,11104-03,5AM Ventures
+55446-58,Instacart,100582-75,Firebolt Ventures
+55446-58,Instacart,227452-51,Future Ventures  San Francisco 
+59199-40,Databricks,54172-81,Plug and Play Tech Center
+59199-40,Databricks,11315-62,Founders Fund
+59199-40,Databricks,60007-78,Montage Ventures
+59199-40,Databricks,50980-69,Lerer Hippeau Ventures
+59199-40,Databricks,162301-60,Veronorte
+59199-40,Databricks,40420-36,Y Combinator
+59199-40,Databricks,224253-01,Haitao Capital
+59199-40,Databricks,277503-22,DTCP
+59199-40,Databricks,60139-90,Susa Ventures
+59199-40,Databricks,52202-35,Global Brain
+64901-80,Epic Games,40420-36,Y Combinator
+64901-80,Epic Games,56829-97,Bowery Capital
+64901-80,Epic Games,60139-90,Susa Ventures
+64901-80,Epic Games,10134-73,Bessemer Venture Partners
+64901-80,Epic Games,54207-19,Slow Ventures
+64901-80,Epic Games,10560-70,AltaIR Capital
+64901-80,Epic Games,57697-12,Streamlined Ventures
+64901-80,Epic Games,484176-70,Resolved Ventures
+64901-80,Epic Games,125084-71,Precursor Ventures
+64901-80,Epic Games,110937-70,Soma Capital
+437607-19,FTX Group,160193-26,DontGo
+437607-19,FTX Group,231527-98,Granite Bridge Partners
+437607-19,FTX Group,10089-64,Wafra Partners
+437607-19,FTX Group,120474-55,Tambovagroinvest
+437607-19,FTX Group,223838-02,Maire Investments
+437607-19,FTX Group,438597-64,Encourage
+437607-19,FTX Group,125901-82,Knightsbridge Executive Services
+437607-19,FTX Group,153685-18,Carroll Capital Holdings
+437607-19,FTX Group,168987-61,Hangzhou Anysoft Information Technology Company
+437607-19,FTX Group,399631-78,Istria Capital
+52241-32,Fanatics,221796-19,QBE Ventures
+52241-32,Fanatics,52815-70,Tuesday Capital
+52241-32,Fanatics,166301-20,Irving Investors
+52241-32,Fanatics,11191-87,Greycroft
+52241-32,Fanatics,56833-03,BoxGroup
+52241-32,Fanatics,183656-44,Evolution VC Partners
+52241-32,Fanatics,53906-41,Social Capital
+52241-32,Fanatics,60139-90,Susa Ventures
+52241-32,Fanatics,162301-60,Veronorte
+52241-32,Fanatics,233706-61,Dragonfly Capital Partners  San Francisco 
+59358-16,Chime Group,10014-76,PwC
+59358-16,Chime Group,459763-93,Barletta Group
+59358-16,Chime Group,40372-84,Pinova Capital
+59358-16,Chime Group,59606-92,ANA Holdings
+59358-16,Chime Group,65265-85,Emma Capital
+59358-16,Chime Group,11195-74,CVF Capital Partners
+59358-16,Chime Group,438738-31,Energy Transition Ventures
+59358-16,Chime Group,52153-03,Private Equity Partners
+59358-16,Chime Group,54071-11,StartupNation Ventures
+59358-16,Chime Group,186719-41,Redwood Ventures
+115437-61,BYJU S,11189-44,First Round Capital
+115437-61,BYJU S,231270-40,Quiet Capital
+115437-61,BYJU S,50980-69,Lerer Hippeau Ventures
+115437-61,BYJU S,10139-41,Accel
+115437-61,BYJU S,10134-73,Bessemer Venture Partners
+115437-61,BYJU S,53906-41,Social Capital
+115437-61,BYJU S,54172-81,Plug and Play Tech Center
+115437-61,BYJU S,162301-60,Veronorte
+115437-61,BYJU S,51143-68,Oregon Venture Fund
+115437-61,BYJU S,56010-97,Draper Associates
+64710-82,Xiaohongshu,10133-20,CRV
+64710-82,Xiaohongshu,56833-03,BoxGroup
+64710-82,Xiaohongshu,41716-90,Andreessen Horowitz
+64710-82,Xiaohongshu,54880-12,Sinovation Ventures
+64710-82,Xiaohongshu,52815-70,Tuesday Capital
+64710-82,Xiaohongshu,50980-60,SV Angel
+64710-82,Xiaohongshu,267563-89,Lava Walk Ventures
+64710-82,Xiaohongshu,60007-78,Montage Ventures
+64710-82,Xiaohongshu,51639-76,Correlation Ventures
+64710-82,Xiaohongshu,58781-35,137 Ventures
+231806-53,J T Express,267160-96,Mirae Asset Capital
+231806-53,J T Express,55436-86,AME Cloud Ventures
+231806-53,J T Express,124315-39,Nima Capital
+231806-53,J T Express,60478-12,Future Perfect Ventures
+231806-53,J T Express,43003-54,Founders  Co op
+231806-53,J T Express,11435-05,Mitsubishi UFJ Capital
+231806-53,J T Express,11251-81,New Enterprise Associates
+231806-53,J T Express,10181-17,Morgenthaler Ventures
+231806-53,J T Express,228467-44,CICC Capital
+231806-53,J T Express,52775-83,BDC Capital
+65211-31,Yuanfudao,156924-73,Syren Capital Advisors
+65211-31,Yuanfudao,10271-98,TCV
+65211-31,Yuanfudao,58988-17,Cherubic Ventures
+65211-31,Yuanfudao,163995-04,Fusion Fund
+65211-31,Yuanfudao,13329-73,Palo Alto Networks
+65211-31,Yuanfudao,168558-13,5Y Capital
+65211-31,Yuanfudao,51022-00,Kima Ventures
+65211-31,Yuanfudao,56833-03,BoxGroup
+65211-31,Yuanfudao,54207-19,Slow Ventures
+65211-31,Yuanfudao,267160-96,Mirae Asset Capital
+54805-51,Discord,41716-90,Andreessen Horowitz
+54805-51,Discord,53906-41,Social Capital
+54805-51,Discord,52202-35,Global Brain
+54805-51,Discord,52646-23,East Ventures
+54805-51,Discord,267563-89,Lava Walk Ventures
+54805-51,Discord,52815-70,Tuesday Capital
+54805-51,Discord,54172-81,Plug and Play Tech Center
+54805-51,Discord,51639-76,Correlation Ventures
+54805-51,Discord,13240-18,Fidelity Investments
+54805-51,Discord,60007-78,Montage Ventures
+117191-17,Gopuff,61568-83,Aventura VC
+117191-17,Gopuff,60478-12,Future Perfect Ventures
+117191-17,Gopuff,51577-30,Triventures
+117191-17,Gopuff,124929-82,Gaingels
+117191-17,Gopuff,484176-70,Resolved Ventures
+117191-17,Gopuff,267563-89,Lava Walk Ventures
+117191-17,Gopuff,52815-70,Tuesday Capital
+117191-17,Gopuff,59152-78,Fidelity International
+117191-17,Gopuff,11133-01,Benchmark  San Francisco 
+117191-17,Gopuff,11247-67,MCP Partners
+56502-19,Ripple,56010-97,Draper Associates
+56502-19,Ripple,60007-78,Montage Ventures
+56502-19,Ripple,42873-94,Tiger Global Management
+56502-19,Ripple,52815-70,Tuesday Capital
+56502-19,Ripple,187442-38,Village Global
+56502-19,Ripple,52202-35,Global Brain
+56502-19,Ripple,51639-76,Correlation Ventures
+56502-19,Ripple,50980-60,SV Angel
+56502-19,Ripple,124319-53,NFX
+56502-19,Ripple,170957-26,PROOF fund
+65909-44,Blockchain com,56091-70,Coatue Management
+65909-44,Blockchain com,110937-70,Soma Capital
+65909-44,Blockchain com,231972-49,Tribe Capital
+65909-44,Blockchain com,11242-54,Menlo Ventures
+65909-44,Blockchain com,221796-19,QBE Ventures
+65909-44,Blockchain com,224548-84,Multicoin Capital
+65909-44,Blockchain com,222565-15,Dell Technologies Capital
+65909-44,Blockchain com,41011-21,BVF Partners
+65909-44,Blockchain com,54172-81,Plug and Play Tech Center
+65909-44,Blockchain com,65419-66,BAM Ventures
+226883-35,OpenSea,49063-60,GV
+226883-35,OpenSea,10133-20,CRV
+226883-35,OpenSea,11203-21,GGV Capital
+226883-35,OpenSea,60007-78,Montage Ventures
+226883-35,OpenSea,50980-69,Lerer Hippeau Ventures
+226883-35,OpenSea,162301-60,Veronorte
+226883-35,OpenSea,233689-60,Dreamers VC
+226883-35,OpenSea,51639-76,Correlation Ventures
+226883-35,OpenSea,56833-03,BoxGroup
+226883-35,OpenSea,42873-94,Tiger Global Management
+92115-91,Grammarly,234961-84,NewView Capital
+92115-91,Grammarly,55436-86,AME Cloud Ventures
+92115-91,Grammarly,52370-29,Great Oaks Venture Capital
+92115-91,Grammarly,11191-87,Greycroft
+92115-91,Grammarly,54855-55,Greenoaks Capital Partners
+92115-91,Grammarly,442538-20,RiSo Capital
+92115-91,Grammarly,42873-94,Tiger Global Management
+92115-91,Grammarly,170583-04,Beta Bridge Capital
+92115-91,Grammarly,40420-36,Y Combinator
+92115-91,Grammarly,185007-52,Himel Capital
+221532-13,Devoted Health,10134-73,Bessemer Venture Partners
+221532-13,Devoted Health,52370-29,Great Oaks Venture Capital
+221532-13,Devoted Health,54172-81,Plug and Play Tech Center
+221532-13,Devoted Health,50980-60,SV Angel
+221532-13,Devoted Health,124929-82,Gaingels
+221532-13,Devoted Health,49063-60,GV
+221532-13,Devoted Health,40773-97,DST Global
+221532-13,Devoted Health,53906-41,Social Capital
+221532-13,Devoted Health,56833-03,BoxGroup
+221532-13,Devoted Health,231270-40,Quiet Capital
+223456-87,JUUL,51762-25,Real Ventures
+223456-87,JUUL,110937-70,Soma Capital
+223456-87,JUUL,54207-19,Slow Ventures
+223456-87,JUUL,56010-97,Draper Associates
+223456-87,JUUL,11323-45,Union Square Ventures
+223456-87,JUUL,41716-90,Andreessen Horowitz
+223456-87,JUUL,50980-69,Lerer Hippeau Ventures
+223456-87,JUUL,58068-64,Baillie Gifford
+223456-87,JUUL,185007-52,Himel Capital
+223456-87,JUUL,54172-81,Plug and Play Tech Center
+153289-81,Bitmain,60007-78,Montage Ventures
+153289-81,Bitmain,54172-81,Plug and Play Tech Center
+153289-81,Bitmain,56010-97,Draper Associates
+153289-81,Bitmain,110937-70,Soma Capital
+153289-81,Bitmain,11251-81,New Enterprise Associates
+153289-81,Bitmain,42873-94,Tiger Global Management
+153289-81,Bitmain,49063-60,GV
+153289-81,Bitmain,41716-90,Andreessen Horowitz
+153289-81,Bitmain,40773-97,DST Global
+153289-81,Bitmain,40420-36,Y Combinator
+93537-46,Biosplice Therapeutics,222016-96,Arrize Capital
+93537-46,Biosplice Therapeutics,50980-69,Lerer Hippeau Ventures
+93537-46,Biosplice Therapeutics,60007-78,Montage Ventures
+93537-46,Biosplice Therapeutics,168558-13,5Y Capital
+93537-46,Biosplice Therapeutics,122902-30,Janus Henderson Investors
+93537-46,Biosplice Therapeutics,53906-41,Social Capital
+93537-46,Biosplice Therapeutics,41716-90,Andreessen Horowitz
+93537-46,Biosplice Therapeutics,91701-10,Matrix Partners China
+93537-46,Biosplice Therapeutics,10139-41,Accel
+93537-46,Biosplice Therapeutics,40420-36,Y Combinator
+299326-60,Goodleap,265557-70,Next Capital  China 
+299326-60,Goodleap,52646-23,East Ventures
+299326-60,Goodleap,60478-12,Future Perfect Ventures
+299326-60,Goodleap,11175-13,Delta Partners
+299326-60,Goodleap,221936-86,Cassius Family
+299326-60,Goodleap,168558-13,5Y Capital
+299326-60,Goodleap,124315-39,Nima Capital
+299326-60,Goodleap,99192-52,Forefront Venture Partners
+299326-60,Goodleap,61372-27,DHVC
+299326-60,Goodleap,50980-60,SV Angel
+338635-54,Xingsheng Selected,129009-61,JAZZ Venture Partners
+338635-54,Xingsheng Selected,163281-70,Ride Ventures
+338635-54,Xingsheng Selected,11315-62,Founders Fund
+338635-54,Xingsheng Selected,65064-07,Cisco Investments
+338635-54,Xingsheng Selected,11211-13,In Q Tel
+338635-54,Xingsheng Selected,60708-43,Mindrock Capital
+338635-54,Xingsheng Selected,11295-73,Sequoia Capital
+338635-54,Xingsheng Selected,54172-81,Plug and Play Tech Center
+338635-54,Xingsheng Selected,124929-64,F Prime Capital
+338635-54,Xingsheng Selected,40420-36,Y Combinator
+153064-27,Getir,223563-97,Stout Street Capital
+153064-27,Getir,11261-89,Crosslink Capital
+153064-27,Getir,56091-70,Coatue Management
+153064-27,Getir,233689-60,Dreamers VC
+153064-27,Getir,56199-52,CRCM Ventures
+153064-27,Getir,52173-28,Start Fund
+153064-27,Getir,51639-76,Correlation Ventures
+153064-27,Getir,55026-55,Lotus Capital
+153064-27,Getir,60007-78,Montage Ventures
+153064-27,Getir,52815-70,Tuesday Capital
+100744-84,Airtable,55436-86,AME Cloud Ventures
+100744-84,Airtable,95034-70,SBI Investment
+100744-84,Airtable,181926-82,UpHonest Capital
+100744-84,Airtable,442606-06,Emles Venture Partners
+100744-84,Airtable,49063-60,GV
+100744-84,Airtable,40420-36,Y Combinator
+100744-84,Airtable,185959-36,Consensys Mesh
+100744-84,Airtable,56697-76,TenOneTen Ventures
+100744-84,Airtable,41716-90,Andreessen Horowitz
+100744-84,Airtable,10134-73,Bessemer Venture Partners
+171036-28,Zongmu,54880-12,Sinovation Ventures
+171036-28,Zongmu,60007-78,Montage Ventures
+171036-28,Zongmu,437730-67,XN
+171036-28,Zongmu,89936-74,Sequoia Capital China
+171036-28,Zongmu,40773-97,DST Global
+171036-28,Zongmu,11203-21,GGV Capital
+171036-28,Zongmu,10133-20,CRV
+171036-28,Zongmu,56199-52,CRCM Ventures
+171036-28,Zongmu,54930-25,Trustbridge Partners
+171036-28,Zongmu,228467-44,CICC Capital
+178355-71,Rippling,64503-19,NTT Docomo Ventures
+178355-71,Rippling,234859-06,500 Southeast Asia
+178355-71,Rippling,162301-60,Veronorte
+178355-71,Rippling,50951-62,Alpaca VC
+178355-71,Rippling,11292-22,Saints Capital
+178355-71,Rippling,225641-35,Alpha Intelligence Capital Fund
+178355-71,Rippling,57781-45,Wing Venture Capital
+178355-71,Rippling,49063-60,GV
+178355-71,Rippling,51639-76,Correlation Ventures
+178355-71,Rippling,11208-16,Hearst Ventures
+62015-59,Global Switch Holdings,167538-79,Yanghe Ventures
+62015-59,Global Switch Holdings,42228-91,Vendis Capital Management
+62015-59,Global Switch Holdings,169018-21,FinTech Forge
+62015-59,Global Switch Holdings,463427-29,Wuhu Construction Investment Co  Ltd
+62015-59,Global Switch Holdings,129119-77,Thunder Bay Ventures
+62015-59,Global Switch Holdings,121203-37,RCF Jolimont
+62015-59,Global Switch Holdings,12113-56,Transom Capital Group
+62015-59,Global Switch Holdings,169833-34,TribalScale
+62015-59,Global Switch Holdings,11389-42,Rand Merchant Bank
+62015-59,Global Switch Holdings,163272-61,Zhejiang Jinke Entertainment Culture Company
+149258-71,Celonis,54172-81,Plug and Play Tech Center
+149258-71,Celonis,50980-60,SV Angel
+149258-71,Celonis,163995-04,Fusion Fund
+149258-71,Celonis,40420-36,Y Combinator
+149258-71,Celonis,58781-35,137 Ventures
+149258-71,Celonis,124929-82,Gaingels
+149258-71,Celonis,11228-50,Kleiner Perkins
+149258-71,Celonis,125084-71,Precursor Ventures
+149258-71,Celonis,11211-13,In Q Tel
+149258-71,Celonis,10134-73,Bessemer Venture Partners
+466020-19,Weilong Delicious Global Holdings,60007-78,Montage Ventures
+466020-19,Weilong Delicious Global Holdings,40773-97,DST Global
+466020-19,Weilong Delicious Global Holdings,54207-19,Slow Ventures
+466020-19,Weilong Delicious Global Holdings,11251-81,New Enterprise Associates
+466020-19,Weilong Delicious Global Holdings,56199-52,CRCM Ventures
+466020-19,Weilong Delicious Global Holdings,54880-12,Sinovation Ventures
+466020-19,Weilong Delicious Global Holdings,53906-41,Social Capital
+466020-19,Weilong Delicious Global Holdings,91701-10,Matrix Partners China
+466020-19,Weilong Delicious Global Holdings,124929-64,F Prime Capital
+466020-19,Weilong Delicious Global Holdings,60139-90,Susa Ventures
+111099-25,Swiggy,277503-22,DTCP
+111099-25,Swiggy,51639-76,Correlation Ventures
+111099-25,Swiggy,41716-90,Andreessen Horowitz
+111099-25,Swiggy,54172-81,Plug and Play Tech Center
+111099-25,Swiggy,42873-94,Tiger Global Management
+111099-25,Swiggy,92869-39,Kairos HQ
+111099-25,Swiggy,124929-82,Gaingels
+111099-25,Swiggy,112786-30,Arena Ventures
+111099-25,Swiggy,50980-60,SV Angel
+111099-25,Swiggy,60139-90,Susa Ventures
+101664-91,Lalamove,11203-21,GGV Capital
+101664-91,Lalamove,60007-78,Montage Ventures
+101664-91,Lalamove,49063-60,GV
+101664-91,Lalamove,60139-90,Susa Ventures
+101664-91,Lalamove,222565-15,Dell Technologies Capital
+101664-91,Lalamove,56199-52,CRCM Ventures
+101664-91,Lalamove,11237-95,Mayfield  Private Equity 
+101664-91,Lalamove,183656-44,Evolution VC Partners
+101664-91,Lalamove,265557-70,Next Capital  China 
+101664-91,Lalamove,56010-97,Draper Associates
+57686-86,Figma,125084-71,Precursor Ventures
+57686-86,Figma,40420-36,Y Combinator
+57686-86,Figma,122902-30,Janus Henderson Investors
+57686-86,Figma,60254-83,Gebr der Mende
+57686-86,Figma,62276-41,QueensBridge Venture Partners
+57686-86,Figma,150042-52,Colle Capital Partners
+57686-86,Figma,232112-71,USAA Corporate Development
+57686-86,Figma,51662-62,Sand Hill Angels
+57686-86,Figma,54172-81,Plug and Play Tech Center
+57686-86,Figma,11206-72,HarbourVest Partners
+53903-53,Reddit,58781-35,137 Ventures
+53903-53,Reddit,40420-36,Y Combinator
+53903-53,Reddit,110937-70,Soma Capital
+53903-53,Reddit,49063-60,GV
+53903-53,Reddit,124929-82,Gaingels
+53903-53,Reddit,125084-71,Precursor Ventures
+53903-53,Reddit,170957-26,PROOF fund
+53903-53,Reddit,10463-23,Silicon Valley Bank
+53903-53,Reddit,375602-95,Operator Collective
+53903-53,Reddit,183174-31,Gradient Ventures
+54522-55,Talkdesk,60007-78,Montage Ventures
+54522-55,Talkdesk,49063-60,GV
+54522-55,Talkdesk,11281-06,Redpoint Ventures
+54522-55,Talkdesk,54207-19,Slow Ventures
+54522-55,Talkdesk,170957-26,PROOF fund
+54522-55,Talkdesk,51125-14,The Acceleration Group
+54522-55,Talkdesk,234859-06,500 Southeast Asia
+54522-55,Talkdesk,56010-97,Draper Associates
+54522-55,Talkdesk,52815-70,Tuesday Capital
+54522-55,Talkdesk,277503-22,DTCP
+266344-84,Thrasio,188083-45,Manta Ray Ventures
+266344-84,Thrasio,11208-16,Hearst Ventures
+266344-84,Thrasio,56010-97,Draper Associates
+266344-84,Thrasio,54172-81,Plug and Play Tech Center
+266344-84,Thrasio,57697-12,Streamlined Ventures
+266344-84,Thrasio,11227-60,Khosla Ventures
+266344-84,Thrasio,56833-03,BoxGroup
+266344-84,Thrasio,10052-20,Battery Ventures
+266344-84,Thrasio,170957-26,PROOF fund
+266344-84,Thrasio,40420-36,Y Combinator
+56560-42,Digital Currency Group,50980-69,Lerer Hippeau Ventures
+56560-42,Digital Currency Group,41716-90,Andreessen Horowitz
+56560-42,Digital Currency Group,54172-81,Plug and Play Tech Center
+56560-42,Digital Currency Group,52815-70,Tuesday Capital
+56560-42,Digital Currency Group,267563-89,Lava Walk Ventures
+56560-42,Digital Currency Group,42873-94,Tiger Global Management
+56560-42,Digital Currency Group,58068-64,Baillie Gifford
+56560-42,Digital Currency Group,56010-97,Draper Associates
+56560-42,Digital Currency Group,60007-78,Montage Ventures
+56560-42,Digital Currency Group,169389-01,VegInvest
+234559-90,KuCoin,52815-70,Tuesday Capital
+234559-90,KuCoin,167489-20,Sequoia Capital India
+234559-90,KuCoin,54726-76,Initialized Capital Management
+234559-90,KuCoin,11261-89,Crosslink Capital
+234559-90,KuCoin,162301-60,Veronorte
+234559-90,KuCoin,225735-76,byFounders
+234559-90,KuCoin,438274-63,Carbon Arrow Capital
+234559-90,KuCoin,58663-63,Lilly Asia Ventures
+234559-90,KuCoin,10414-36,Merck   Co 
+234559-90,KuCoin,11242-54,Menlo Ventures
+55250-20,OutSystems,227341-18,Wayra UK
+55250-20,OutSystems,264685-24,ANIMO Ventures
+55250-20,OutSystems,11237-59,Malaysia Venture Capital Management
+55250-20,OutSystems,57674-89,Aslanoba Capital
+55250-20,OutSystems,60026-77,WestTech Ventures
+55250-20,OutSystems,229683-88,UCB Ventures
+55250-20,OutSystems,491581-00,Ground Squirrel Ventures
+55250-20,OutSystems,226855-18,7 Global Capital
+55250-20,OutSystems,86344-75,Emerge Education  VC 
+55250-20,OutSystems,231658-30,Incite Ventures  San Francisco 
+60104-71,ServiceTitan,375602-95,Operator Collective
+60104-71,ServiceTitan,42715-00,Felicis Ventures
+60104-71,ServiceTitan,55618-12,Red Sea Ventures
+60104-71,ServiceTitan,11251-81,New Enterprise Associates
+60104-71,ServiceTitan,54880-12,Sinovation Ventures
+60104-71,ServiceTitan,452764-54,La Maison Partners
+60104-71,ServiceTitan,11132-38,August Capital
+60104-71,ServiceTitan,234449-20,Coinbase Ventures
+60104-71,ServiceTitan,11135-71,Canaan Partners
+60104-71,ServiceTitan,161715-25,Halogen Ventures
+170744-32,HeyTea,183174-31,Gradient Ventures
+170744-32,HeyTea,92869-39,Kairos HQ
+170744-32,HeyTea,95034-70,SBI Investment
+170744-32,HeyTea,118725-85,A Capital Ventures
+170744-32,HeyTea,43058-08,Revolution ROTR
+170744-32,HeyTea,88958-80,iSelect Fund
+170744-32,HeyTea,10134-73,Bessemer Venture Partners
+170744-32,HeyTea,50986-90,IA Ventures
+170744-32,HeyTea,53830-54,TSVC
+170744-32,HeyTea,124929-64,F Prime Capital
+64126-90,N26,56718-46,Amino Capital
+64126-90,N26,99756-10,Milliways Ventures
+64126-90,N26,56697-76,TenOneTen Ventures
+64126-90,N26,98634-70,Keiretsu Capital
+64126-90,N26,125084-71,Precursor Ventures
+64126-90,N26,442606-06,Emles Venture Partners
+64126-90,N26,11331-01,Signal Peak Ventures
+64126-90,N26,53345-35,Rainfall
+64126-90,N26,173287-36,Lightrock
+64126-90,N26,54701-56,Breyer Capital
+85669-30,Klaviyo,59891-50,Dorm Room Fund
+85669-30,Klaviyo,11215-54,IDG Capital
+85669-30,Klaviyo,123826-78,Struck Capital
+85669-30,Klaviyo,160585-21,The Perkins Fund
+85669-30,Klaviyo,60480-82,University Ventures
+85669-30,Klaviyo,170092-27,Reimagined Ventures
+85669-30,Klaviyo,107882-74,Salesforce Ventures
+85669-30,Klaviyo,124929-82,Gaingels
+85669-30,Klaviyo,11212-30,Horizon Technology Finance BDC
+85669-30,Klaviyo,235306-45,9Yards Capital
+178342-84,Northvolt,97654-24,Mighty Capital
+178342-84,Northvolt,11590-93,National Bank of Canada
+178342-84,Northvolt,54134-74,Expansion Venture Capital
+178342-84,Northvolt,10463-23,Silicon Valley Bank
+178342-84,Northvolt,489506-50,Mango vc
+178342-84,Northvolt,375602-95,Operator Collective
+178342-84,Northvolt,55747-99,Founders Circle Capital
+178342-84,Northvolt,50980-60,SV Angel
+178342-84,Northvolt,489999-25,Jump Crypto
+178342-84,Northvolt,56718-46,Amino Capital
+64152-28,Tanium,13240-18,Fidelity Investments
+64152-28,Tanium,54172-81,Plug and Play Tech Center
+64152-28,Tanium,120913-21,Flight Ventures
+64152-28,Tanium,60708-43,Mindrock Capital
+64152-28,Tanium,11261-89,Crosslink Capital
+64152-28,Tanium,122902-30,Janus Henderson Investors
+64152-28,Tanium,40773-97,DST Global
+64152-28,Tanium,54207-19,Slow Ventures
+64152-28,Tanium,49063-60,GV
+64152-28,Tanium,56822-59,SternAegis Ventures
+101984-86,Niantic,56752-12,Hard Yaka
+101984-86,Niantic,108358-57,FJ Labs
+101984-86,Niantic,10382-32,Allen   Company
+101984-86,Niantic,432776-53,Lennar Ventures
+101984-86,Niantic,55261-00,Right Side Capital Management
+101984-86,Niantic,41716-90,Andreessen Horowitz
+101984-86,Niantic,54172-81,Plug and Play Tech Center
+101984-86,Niantic,170957-26,PROOF fund
+101984-86,Niantic,56822-59,SternAegis Ventures
+101984-86,Niantic,40420-36,Y Combinator
+61868-17,OYO Rooms,227499-49,Magnify Ventures
+61868-17,OYO Rooms,51448-87,The University of Tokyo Edge Capital
+61868-17,OYO Rooms,167900-68,Leaguer Venture Investment
+61868-17,OYO Rooms,11212-30,Horizon Technology Finance BDC
+61868-17,OYO Rooms,11266-84,Versant Ventures
+61868-17,OYO Rooms,167818-33,Olive Tree Capital
+61868-17,OYO Rooms,58373-20,Pear
+61868-17,OYO Rooms,432677-62,Cobalt Capital  Santa Monica 
+61868-17,OYO Rooms,55026-55,Lotus Capital
+61868-17,OYO Rooms,105826-96,Skystar Capital

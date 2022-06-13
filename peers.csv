@@ -1,0 +1,31 @@
+s_company_id,s_company_name,p_company_id,p_company_name
+55815-22 ,Coinbase,178355-08,Lime
+55815-22 ,Coinbase,56265-94,Carta
+55815-22,Coinbase,53780-77,Wish
+55815-22,Coinbase,54462-25,Rescale
+55815-22,Coinbase,51777-73,Slack
+55815-22,Coinbase,57523-60,DataRobot
+55815-22,Coinbase,61093-90,Anyroad
+55815-22,Coinbase,97867-54,Checkr
+55815-22,Coinbase,162439-03,Astranis
+55815-22,Coinbase,162900-82,Hippo Enterprises
+51261-67 ,Airbnb,51777-73,Slack
+51261-67 ,Airbnb,57227-95,Robinhood Markets
+51261-67,Airbnb,51136-75,Uber
+51261-67,Airbnb,53780-77,Wish
+51261-67,Airbnb,55758-97,Gusto
+51261-67,Airbnb,55765-18,Snap Group
+51261-67,Airbnb,57271-15,Planet Labs
+51261-67,Airbnb,43117-84,Palantir Technologies
+51261-67,Airbnb,178355-08,Lime
+51261-67,Airbnb,61371-46,Magic Leap
+46488-07,SpaceX,51261-67,Airbnb
+46488-07,SpaceX,55758-97,Gusto
+46488-07,SpaceX,56265-94,Carta
+46488-07,SpaceX,51420-07,Lookout
+46488-07,SpaceX,102075-04,Relativity
+46488-07,SpaceX,162439-03,Astranis
+46488-07,SpaceX,54782-29,Stripe
+46488-07,SpaceX,58167-28,DoorDash
+46488-07,SpaceX,51777-73,Slack
+46488-07,SpaceX,61488-73,Cohesity

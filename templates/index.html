@@ -109,22 +109,29 @@
                     server_user: "neo4j",
                     server_password: "Gupta123!@#",
                     labels: {
-                        "Person": {
-                            caption: "name"
+                        "Company": {
+                            caption: "CompanyName",
                         },
-                        "Movie": {
-                            caption: "title"
+                        "Investor": {
+                            caption: "InvestorName"
                         }
                     },
                     relationships: {
-                        "DIRECTED": {
-                            caption: "title"
+                        "INVESTS_IN": {
+                            caption: false
                         }
                     },
                     // initial_cypher: "MATCH (c:Company)-[r:INVESTS_IN]-(i:Investor) where c.CompanyId=\'" + company_id + "\' RETURN c,r,i"
                     // initial_cypher: "MATCH (a {CompanyId: \'" + company_id + "\'})-[r]-(b) RETURN a,r,b"
                     // initial_cypher: "MATCH (a {CompanyId: \'" + company_id + "\'})-[r]-(b) RETURN a,b"
-                    initial_cypher: "MATCH (n) return n"
+                    // initial_cypher: "MATCH (n) return n"
+                    // initial_cypher: "MATCH (c:Company {CompanyName: 'PagerDuty'})<-[r:INVESTS_IN]-(i)-[r1:INVESTS_IN]->(c1) RETURN c,r,i,r1,c1"
+                    // initial_cypher: "MATCH (c:Company {CompanyName: 'Hangzhou zhuyu Hotel Management'})<-[r:INVESTS_IN]-(i)-[r1:INVESTS_IN]->(c1) RETURN c,r,i,r1,c1"
+                    // initial_cypher: "MATCH (c:Company {CompanyName: 'Kirusa'})<-[r:INVESTS_IN]-(i)-[r1:INVESTS_IN]->(c1) RETURN c,r,i,r1,c1"
+                    // initial_cypher: "MATCH (c:Company {CompanyName: 'KickPay'})<-[r:INVESTS_IN]-(i)-[r1:INVESTS_IN]->(c1) RETURN c,r,i,r1,c1"
+                    // initial_cypher: "MATCH (c:Company {CompanyName: 'CureApp'})<-[r:INVESTS_IN]-(i)-[r1:INVESTS_IN]->(c1) RETURN c,r,i,r1,c1"
+                    // initial_cypher: "MATCH (c:Company {CompanyName: 'Youxinpai (Beijing) Information Technology Co.'})<-[r:INVESTS_IN]-(i)-[r1:INVESTS_IN]->(c1) RETURN c,r,i,r1,c1"
+                    initial_cypher: "MATCH (c:Company {CompanyName: 'Vitau'})<-[r:INVESTS_IN]-(i)-[r1:INVESTS_IN]->(c1) RETURN c,r,i,r1,c1"
                 }
                 console.log(company_id)
                 console.log('drawn')

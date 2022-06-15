@@ -15,6 +15,7 @@ def index():
             investors_file = "investors.csv"
             peers_file = "peers.csv"
             industry_file = "company_industry.csv"
+            score_file = "company_score.csv"
             try:
                 with open(investors_file) as invest:
                     with open(peers_file) as peer:
@@ -22,7 +23,11 @@ def index():
                             reader = csv.reader(industries)
                             next(reader, None) # skip headers
                             industry_map = dict((rows[0],rows[2]) for rows in reader)
-                            return render_template("index.html", investors=invest, peers=peer, company_id=company_id, selected=selected, industries=industry_map)
+                            with open(score_file) as scores:
+                                reader = csv.reader(scores)
+                                next(reader, None) # skip headers
+                                score_map = dict((rows[0],rows[1]) for rows in reader)
+                                return render_template("index.html", investors=invest, peers=peer, company_id=company_id, selected=selected, industries=industry_map, score=score_map)
             except:
                 return render_template("index.html", company_id=company_id)
         else:

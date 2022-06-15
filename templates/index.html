@@ -49,6 +49,11 @@
       {% endif %}
     </div>
     <div class='row h-100 border border-dark' id="viz"></div>
+    <div class='row justify-content-center'>
+      {% if company_id|length %}
+        <p> Investment likelihood: {{ score[company_id] if score is defined }}</p>
+      {% endif %}
+    </div>
     <div class="row  d-flex justify-content-center">
       <div class="row h-100">
         <div class="col h-100" id="table">

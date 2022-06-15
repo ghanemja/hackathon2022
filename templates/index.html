@@ -65,12 +65,14 @@
               <tr>
                 {% set cols = row.split(",") %}
                 {% set peer_id = cols[2] %}
-                {% for col in  cols%}
+                {% if company_id != peer_id %}
+                {% for col in cols[2:] %}
                 <td>{{ col }}</td>
                 {% endfor %}
                 <td>
                   {{ industries[peer_id] }}
                 </td>
+                {% endif %}
               </tr>
               {% endif %}
               {% endfor %}

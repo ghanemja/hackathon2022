@@ -1,0 +1,9 @@
+#go-button {
+    padding-top: 0.3rem;
+}
+
+#go-button:hover {
+    background-color: white;
+    text-decoration-color: #126BC5;
+}
+

@@ -149,12 +149,21 @@
 
   };
 
-  window.onload = draw("{{ company_id }}")
+  window.onload = draw("{{ company_id }}");
 
-  document.getElementById('go-button').addEventListener("click",
   function get_url() {
     var url = 'http://localhost:5000/?company-id=' + document.getElementById("company-id").value;
     window.location.href = url;
+  }
+
+  document.getElementById('go-button').addEventListener("click", get_url);
+  document.getElementById('company-id').addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+    // Cancel the default action, (refreshing the page)
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("go-button").click();
+  }
   });
   </script>
 </body>

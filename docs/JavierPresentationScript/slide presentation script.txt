@@ -1,0 +1,18 @@
+hackathon presentation script
+slide 1
+
+slide 2
+
+slides need to be merged
+
+Keep under a minute
+
+flow:
+- intro, why the ui
+- start the flow of data
+- user input -> backend
+- backend -> csv results
+- csv results are displayed
+- user input -> neo4j
+- neo4j -> returns graph data
+- display graph data

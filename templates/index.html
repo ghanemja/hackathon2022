@@ -20,7 +20,7 @@
             <form class='w-100' method="GET" role="form">
                 <div class="form-group row">
                     <div class="col">
-                        <input id="company-id" type="text" class="form-control" placeholder="Company ID" aria-label="Company ID" aria-describedby="basic-addon2">
+                        <input id="company-id" type="text" class="form-control" placeholder="Company Name" aria-label="Company Name" aria-describedby="basic-addon2">
                     </div>
                     <div class="col input-group-append">
                         <select id="selected_cypher" class="form-select" aria-label="Default select example">
@@ -37,7 +37,7 @@
             </form>
         </div>
         <div class="row justify-content-center">
-            <h1>{{ company_id }}</h1>
+            <h1>{{ company_id }} | Industry</h1>
         </div>
         <div class='row h-100 border border-dark' id="viz"></div>
         <div class="row">
@@ -109,12 +109,12 @@
                     server_user: "neo4j",
                     server_password: "Gupta123!@#",
                     labels: {
-                        "Company": {
-                            caption: "CompanyName",
-                        },
-                        "Investor": {
-                            caption: "InvestorName"
-                        }
+                      "Company": {
+                        caption: "CompanyName",
+                      },
+                      "Investor": {
+                        caption: "InvestorName"
+                      }
                     },
                     relationships: {
                         "INVESTS_IN": {
@@ -131,12 +131,26 @@
                     // initial_cypher: "MATCH (c:Company {CompanyName: 'KickPay'})<-[r:INVESTS_IN]-(i)-[r1:INVESTS_IN]->(c1) RETURN c,r,i,r1,c1"
                     // initial_cypher: "MATCH (c:Company {CompanyName: 'CureApp'})<-[r:INVESTS_IN]-(i)-[r1:INVESTS_IN]->(c1) RETURN c,r,i,r1,c1"
                     // initial_cypher: "MATCH (c:Company {CompanyName: 'Youxinpai (Beijing) Information Technology Co.'})<-[r:INVESTS_IN]-(i)-[r1:INVESTS_IN]->(c1) RETURN c,r,i,r1,c1"
-                    initial_cypher: "MATCH (c:Company {CompanyName: 'Vitau'})<-[r:INVESTS_IN]-(i)-[r1:INVESTS_IN]->(c1) RETURN c,r,i,r1,c1"
+                    // initial_cypher: "MATCH (c:Company{CompanyName: 'Uber'})<-[r:INVESTED_IN]-(i)-[r1:INVESTED_IN]->(c1) RETURN c,r,i,r1,c1 LIMIT 100"
+                    initial_cypher: "MATCH (c:Company{CompanyName: 'KuCoin'})<-[r:INVESTED_IN]-(i)-[r1:INVESTED_IN]->(c1) RETURN c,r,i,r1,c1 LIMIT 10"
                 }
                 console.log(company_id)
                 console.log('drawn')
                 var viz = new NeoVis.default(config);
+                console.log(typeof viz);
                 viz.render();
+                console.log(viz._nodes);
+                // viz._nodes[0].shape = "star";
+                // TODO
+                // as call back to render
+                // got through nodes .label and find company name
+                // change that nodes color
+
+                // async () => {
+                //   var viz = new NeoVis.default(config);
+                //   await viz.render();
+                //   console.log(viz);
+                // };
 
             };
 

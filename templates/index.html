@@ -45,7 +45,7 @@
     </div>
     <div class="row justify-content-center">
       {% if company_id|length %}
-        <h1>{{ company_id }} | {{ industries[company_id] if industries is defined}}</h1>
+        <h1>{{ company_name }} | {{ industries[company_id] if industries is defined}}</h1>
       {% endif %}
     </div>
     <div class='row h-100 border border-dark' id="viz"></div>

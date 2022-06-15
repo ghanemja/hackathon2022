@@ -25,6 +25,8 @@ def index():
                         next(reader, None) # skip headers
                         name_id_map = dict((''.join(rows[1].split()).lower(), rows[0]) for rows in reader)
                         peer.seek(0) # back to top of file
+                        id_name_map = dict((rows[0], rows[1]) for rows in reader)
+                        peer.seek(0)
                         with open(industry_file) as industries:
                             reader = csv.reader(industries)
                             next(reader, None) # skip headers
@@ -34,7 +36,8 @@ def index():
                                 next(reader, None) # skip headers
                                 score_map = dict((rows[0],rows[1]) for rows in reader)
                                 company_id = name_id_map[company_name]
-                                return render_template("index.html", investors=invest, peers=peer, company_id=company_id, selected=selected, industries=industry_map, score=score_map)
+                                _company_name = id_name_map[company_id]
+                                return render_template("index.html", investors=invest, peers=peer, company_id=company_id, company_name=_company_name, selected=selected, industries=industry_map, score=score_map)
             except Exception as e:
                 traceback.print_exc()
                 return render_template("index.html")

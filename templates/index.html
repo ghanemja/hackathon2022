@@ -51,15 +51,21 @@
                           <th scope="col">S Company Name</th>
                           <th scope="col">P Company ID</th>
                           <th scope="col">P Company Name</th>
+                          <th scope="col">P Industry</th>
                         </tr>
                       </thead>
                     <tbody>
                         {% for row in peers %}
                             {% if company_id in row %}
                                 <tr>
-                                {% for col in row.split(",") %}
+                                {% set cols = row.split(",") %}
+                                {% set peer_id = cols[2] %}
+                                {% for col in  cols%}
                                     <td>{{ col }}</td>
                                 {% endfor %}
+                                  <td>
+                                    {{ industries[peer_id] }}
+                                  </td>
                                 </tr>
                             {% endif %}
                         {% endfor %}

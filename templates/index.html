@@ -56,11 +56,16 @@
     </nav>
 
     <div class="row justify-content-center pb-4 fw-light">
-        {% if company_id %}
-        <h1 class="display-4">{{ company_id }} | {{ industries[company_id] }}</h1>
-        {% endif %}
+      {% if company_id|length %}
+        <h1>{{ company_name }} | {{ industries[company_id] if industries is defined}}</h1>
+      {% endif %}
     </div>
     <div class="container">
+      <div class='row justify-content-center'>
+     {% if company_id|length %}
+       <p> Investment likelihood: {{ score[company_id] if score is defined }}</p>
+     {% endif %}
+   </div>
         <div class="row">
             <div class='col w-100 border shadow' id="viz"></div>
             <!-- <div class="col d-flex justify-content-center"> -->
@@ -72,7 +77,7 @@
                         <tr>
                             <th scope="col">Company ID</th>
                             <th scope="col">Company Name</th>
-                            <th scope="col">P Industry</th>
+                            <th scope="col">Peer Industry</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -165,14 +170,23 @@
 
         };
 
-        window.onload = draw("{{ company_id }}")
+  window.onload = draw("{{ company_id }}");
 
-        document.getElementById('go-button').addEventListener("click",
-            function get_url() {
-                var url = 'http://localhost:5000/?company-id=' + document.getElementById("company-id").value;
-                window.location.href = url;
-            });
-    </script>
+  function get_url() {
+    var url = 'http://localhost:5000/?company-id=' + document.getElementById("company-id").value;
+    window.location.href = url;
+  }
+
+  document.getElementById('go-button').addEventListener("click", get_url);
+  document.getElementById('company-id').addEventListener("keypress", (event) => {
+    if (event.key === "Enter") {
+    // Cancel the default action, (refreshing the page)
+    event.preventDefault();
+    // Trigger the button element with a click
+    document.getElementById("go-button").click();
+  }
+  });
+  </script>
 </body>
 
 </html>

@@ -7,8 +7,8 @@ flow:
 - start the flow of data
 - user input -> backend
 - backend -> csv results
-- csv results are returned
-- user input -> neo4j
+- csv results are returned (explain results are received from ML process)
+- user input -> neo4j (explain connection via JS to graph instance)
 - neo4j -> returns graph data
-- display graph data
-- display tables with all data
+- display graph data (scaled to show top results)
+- display tables with all data (filtered for that specific company)

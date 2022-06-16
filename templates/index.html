@@ -1,192 +1,192 @@
 <html>
 <style>
-    .user-input {
-        margin-top: 2rem;
-        width: 100%
-    }
+.user-input {
+  margin-top: 2rem;
+  width: 100%
+}
 </style>
 
 <head>
-    <title>DataViz</title>
-    <script src="https://rawgit.com/neo4j-contrib/neovis.js/master/dist/neovis.js"></script>
+  <title>DataViz</title>
+  <script src="https://rawgit.com/neo4j-contrib/neovis.js/master/dist/neovis.js"></script>
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link src="{{ url_for('static', filename='app.css') }}">
-    </link>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link src="{{ url_for('static', filename='app.css') }}">
+</link>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <nav class="navbar navbar-light bg-light">
-        <div class="container">
-            <div class="row w-100">
-                <div class="col">
-                    <a class="navbar-brand" href="#">
-                        <img src="{{ url_for('static', filename='chaselogo.png') }}" width="175" height="100" alt="">
-                    </a>
-                </div>
-                <div class="user-input col-6 d-flex justify-content-center">
-                    <form method="GET" role="form">
-                        <div class="form-group row">
-                            <div class="col">
-                                <input id="company-id" type="text" class="form-control shadow p-3 mb-5 bg-white"
-                                    placeholder="Company Name" aria-label="Company ID" aria-describedby="basic-addon2">
-                            </div>
-                            <div class="col-auto rounded">
-                                <button id="go-button" class="btn rounded bg-primary text-white"
-                                    type="button">Go</button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-                <div class="col pt-5">
-                    <h5>Investor Knowledge Graph</h5>
-                </div>
-            </div>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container">
+      <div class="row w-100">
+        <div class="col">
+          <a class="navbar-brand" href="#">
+            <img src="{{ url_for('static', filename='chaselogo.png') }}" width="175" height="100" alt="">
+          </a>
         </div>
-    </nav>
+        <div class="user-input col-6 d-flex justify-content-center">
+          <form method="GET" role="form">
+            <div class="form-group row">
+              <div class="col">
+                <input id="company-id" type="text" class="form-control shadow p-3 mb-5 bg-white"
+                placeholder="Company Name" aria-label="Company ID" aria-describedby="basic-addon2">
+              </div>
+              <div class="col-auto rounded">
+                <button id="go-button" class="btn rounded bg-primary text-white"
+                type="button">Go</button>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col pt-5">
+          <h5>Investor Knowledge Graph</h5>
+        </div>
+      </div>
+    </div>
+  </nav>
 
-    <div class="row justify-content-center pb-4 fw-light">
+  <div class="row justify-content-center pb-4 fw-light">
+    {% if company_id|length %}
+    <h1>{{ company_name }} | {{ industries[company_id] if industries is defined}}</h1>
+    {% endif %}
+  </div>
+  <div class="container">
+    <div class='row justify-content-center'>
       {% if company_id|length %}
-        <h1>{{ company_name }} | {{ industries[company_id] if industries is defined}}</h1>
+      <p> Investment likelihood: {{ score[company_id] if score is defined }}</p>
       {% endif %}
     </div>
-    <div class="container">
-      <div class='row justify-content-center'>
-     {% if company_id|length %}
-       <p> Investment likelihood: {{ score[company_id] if score is defined }}</p>
-     {% endif %}
-   </div>
-        <div class="row">
-            <div class='col w-100 border shadow' id="viz"></div>
-            <!-- <div class="col d-flex justify-content-center"> -->
-            <!-- <div class="row h-100"> -->
-            <div class="col h-100" id="table">
-                <h2>Potential Peers</h2>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Company ID</th>
-                            <th scope="col">Company Name</th>
-                            <th scope="col">Peer Industry</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for row in peers %}
-                        {% if company_id in row %}
-                        <tr>
-                            {% set cols = row.split(",") %}
-                            {% set peer_id = cols[2] %}
-                            {% if company_id != peer_id %}
-                            {% for col in cols[2:] %}
-                            <td>{{ col }}</td>
-                            {% endfor %}
-                            <td>
-                                {{ industries[peer_id] }}
-                            </td>
-                            {% endif %}
-                        </tr>
-                        {% endif %}
-                        {% endfor %}
-                    </tbody>
-                </table>
-            </div>
-            <div class="col h-100" id="table">
-                <h2>Company Investors</h2>
-                <table class="table">
-                    <thead>
-                        <tr>
-                            <th scope="col">Investor ID</th>
-                            <th scope="col">Investor Name</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for row in investors %}
-                        {% if company_id in row %}
-                        <tr>
-                            {% for col in row.split(",")[2:] %}
-                            <td>{{ col }}</td>
-                            {% endfor %}
-                        </tr>
-                        {% endif %}
-                        {% endfor %}
-                    </tbody>
-                </table>
-            </div>
-        </div>
+    <div class="row">
+      <div class='col w-100 border shadow' id="viz"></div>
+      <!-- <div class="col d-flex justify-content-center"> -->
+      <!-- <div class="row h-100"> -->
+      <div class="col h-100" id="table">
+        <h2>Potential Peers</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Company ID</th>
+              <th scope="col">Company Name</th>
+              <th scope="col">Peer Industry</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in peers %}
+            {% if company_id in row %}
+            <tr>
+              {% set cols = row.split(",") %}
+              {% set peer_id = cols[2] %}
+              {% if company_id != peer_id %}
+              {% for col in cols[2:] %}
+              <td>{{ col }}</td>
+              {% endfor %}
+              <td>
+                {{ industries[peer_id] }}
+              </td>
+              {% endif %}
+            </tr>
+            {% endif %}
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      <div class="col h-100" id="table">
+        <h2>Company Investors</h2>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">Investor ID</th>
+              <th scope="col">Investor Name</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for row in investors %}
+            {% if company_id in row %}
+            <tr>
+              {% for col in row.split(",")[2:] %}
+              <td>{{ col }}</td>
+              {% endfor %}
+            </tr>
+            {% endif %}
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
     </div>
-    <!-- </div> -->
-    <!-- </div> -->
-    </div>
+  </div>
+  <!-- </div> -->
+  <!-- </div> -->
+</div>
 
-    <script>
-        function draw(company_id) {
-            var config = {
-                container_id: "viz",
-                server_url: "neo4j://35.153.103.47:7687",
-                server_user: "neo4j",
-                server_password: "Gupta123!@#",
-                labels: {
-                    "Company": {
-                        caption: "CompanyName",
-                    },
-                    "Investor": {
-                        caption: "InvestorName"
-                    }
-                },
-                relationships: {
-                    "INVESTS_IN": {
-                        caption: false
-                    }
-                },
-                initial_cypher: "MATCH (c:Company{CompanyName: '" + company_id + "'})<-[r:INVESTED_IN]-(i)-[r1:INVESTED_IN]->(c1) RETURN c,r,i,r1,c1 LIMIT 10"
-            }
-            console.log(company_id)
-            console.log('drawn')
-            var viz = new NeoVis.default(config);
-            console.log(typeof viz);
-            viz.render();
-            console.log(viz._nodes);
-            // viz._nodes[0].shape = "star";
-            // TODO
-            // as call back to render
-            // got through nodes .label and find company name
-            // change that nodes color
-
-            // async () => {
-            //   var viz = new NeoVis.default(config);
-            //   await viz.render();
-            //   console.log(viz);
-            // };
-
-        };
-
-  window.onload = draw("{{ company_id }}");
-
-  function get_url() {
-    var url = 'http://localhost:5000/?company-id=' + document.getElementById("company-id").value;
-    window.location.href = url;
+<script>
+function draw(company_id) {
+  var config = {
+    container_id: "viz",
+    server_url: "neo4j://35.153.103.47:7687",
+    server_user: "neo4j",
+    server_password: "Gupta123!@#",
+    labels: {
+      "Company": {
+        caption: "CompanyName",
+      },
+      "Investor": {
+        caption: "InvestorName"
+      }
+    },
+    relationships: {
+      "INVESTS_IN": {
+        caption: false
+      }
+    },
+    initial_cypher: "MATCH (c:Company{CompanyName: '" + company_id + "'})<-[r:INVESTED_IN]-(i)-[r1:INVESTED_IN]->(c1) RETURN c,r,i,r1,c1 LIMIT 10"
   }
+  console.log(company_id)
+  console.log('drawn')
+  var viz = new NeoVis.default(config);
+  console.log(typeof viz);
+  viz.render();
+  console.log(viz._nodes);
+  // viz._nodes[0].shape = "star";
+  // TODO
+  // as call back to render
+  // got through nodes .label and find company name
+  // change that nodes color
 
-  document.getElementById('go-button').addEventListener("click", get_url);
-  document.getElementById('company-id').addEventListener("keypress", (event) => {
-    if (event.key === "Enter") {
+  // async () => {
+  //   var viz = new NeoVis.default(config);
+  //   await viz.render();
+  //   console.log(viz);
+  // };
+
+};
+
+window.onload = draw("{{ company_id }}");
+
+function get_url() {
+  var url = 'http://localhost:5000/?company-id=' + document.getElementById("company-id").value;
+  window.location.href = url;
+}
+
+document.getElementById('go-button').addEventListener("click", get_url);
+document.getElementById('company-id').addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
     // Cancel the default action, (refreshing the page)
     event.preventDefault();
     // Trigger the button element with a click
     document.getElementById("go-button").click();
   }
-  });
-  </script>
+});
+</script>
 </body>
 
 </html>

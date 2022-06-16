@@ -60,14 +60,14 @@ crossorigin="anonymous"></script>
     <h1>{{ company_name }} | {{ industries[company_id] if industries is defined}}</h1>
     {% endif %}
   </div>
-  <div class="container">
+  <div class="container-fluid">
     <div class='row justify-content-center'>
       {% if company_id|length %}
-      <p> Investment likelihood: {{ score[company_id] if score is defined }}</p>
+      <h3> Investment likelihood: {{ score[company_id] if score is defined }}</h3>
       {% endif %}
     </div>
-    <div class="row">
-      <div class='col w-100 border shadow' id="viz"></div>
+    <div class="row ml-1 mr-1">
+      <div class='col-6 border shadow' id="viz"></div>
       <!-- <div class="col d-flex justify-content-center"> -->
       <!-- <div class="row h-100"> -->
       <div class="col h-100" id="table">

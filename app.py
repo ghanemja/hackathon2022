@@ -11,7 +11,8 @@ CORS(app)
 def index():
     if request.method == 'GET':
         company_name = request.args.get('company-id')
-        company_name = ''.join(company_name.split()).lower()
+        if company_name:
+            company_name = ''.join(company_name.split()).lower()
         selected = request.args.get('selected_cypher')
         if company_name:
             investors_file = "investors.csv"

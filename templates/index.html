@@ -128,6 +128,53 @@ crossorigin="anonymous"></script>
   <!-- </div> -->
 </div>
 
+    <!-- <script>
+        function draw(company_id) {
+            var config = {
+                container_id: "viz",
+                server_url: "neo4j://35.153.103.47:7687",
+                server_user: "neo4j",
+                server_password: "Gupta123!@#",
+                labels: {
+                    "Company": {
+                        caption: "CompanyName",
+                    },
+                    "Investor": {
+                        caption: "InvestorName"
+                    }
+                },
+                relationships: {
+                    "INVESTS_IN": {
+                        caption: false
+                    }
+                },
+                initial_cypher: "MATCH (c:Company{CompanyName: '" + company_id + "'})<-[r:INVESTED_IN]-(i)-[r1:INVESTED_IN]->(c1) RETURN c,r,i,r1,c1 LIMIT 10"
+            }
+            console.log(company_id)
+            console.log('drawn')
+            var viz = new NeoVis.default(config);
+            console.log(typeof viz);
+            viz.render();
+            console.log(viz._nodes);
+            // viz._nodes[0].shape = "star";
+            // TODO
+            // as call back to render
+            // got through nodes .label and find company name
+            // change that nodes color
+
+            // async () => {
+            //   var viz = new NeoVis.default(config);
+            //   await viz.render();
+            //   console.log(viz);
+            // };
+
+        };
+
+  window.onload = draw("{{ company_name }}");
+
+  function get_url() {
+    var url = 'http://localhost:5000/?company-id=' + document.getElementById("company-id").value;
+    window.location.href = url; -->
 <script>
 function draw(company_id) {
   var config = {

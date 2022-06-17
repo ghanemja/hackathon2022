@@ -57,13 +57,13 @@ crossorigin="anonymous"></script>
 
   <div class="row justify-content-center pb-4 fw-light">
     {% if company_id|length %}
-    <h1>{{ company_name }} | {{ industries[company_id] if industries is defined}}</h1>
+    <h1>{{ company_name }} ({{ industries[company_id] if industries is defined}}) </h1>
     {% endif %}
   </div>
   <div class="container-fluid">
     <div class='row justify-content-center'>
       {% if company_id|length %}
-      <h3> Investment likelihood: {{ score[company_id] if score is defined }}</h3>
+      <h3 class="pb-3"> VC Funding Prediction Percentile: {{ score[company_id] if score is defined }}</h3>
       {% endif %}
     </div>
     <div class="row ml-1 mr-1">
@@ -71,13 +71,13 @@ crossorigin="anonymous"></script>
       <!-- <div class="col d-flex justify-content-center"> -->
       <!-- <div class="row h-100"> -->
       <div class="col h-100" id="table">
-        <h2>Potential Peers</h2>
+        <h2>Similar Companies</h2>
         <table class="table">
           <thead>
             <tr>
-              <th scope="col">Company ID</th>
-              <th scope="col">Company Name</th>
-              <th scope="col">Peer Industry</th>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
+              <th scope="col">Industry</th>
             </tr>
           </thead>
           <tbody>
@@ -101,12 +101,12 @@ crossorigin="anonymous"></script>
         </table>
       </div>
       <div class="col h-100" id="table">
-        <h2>Company Investors</h2>
+        <h2>Potential Investors</h2>
         <table class="table">
           <thead>
             <tr>
-              <th scope="col">Investor ID</th>
-              <th scope="col">Investor Name</th>
+              <th scope="col">ID</th>
+              <th scope="col">Name</th>
             </tr>
           </thead>
           <tbody>
@@ -155,19 +155,6 @@ crossorigin="anonymous"></script>
             var viz = new NeoVis.default(config);
             console.log(typeof viz);
             viz.render();
-            console.log(viz._nodes);
-            // viz._nodes[0].shape = "star";
-            // TODO
-            // as call back to render
-            // got through nodes .label and find company name
-            // change that nodes color
-
-            // async () => {
-            //   var viz = new NeoVis.default(config);
-            //   await viz.render();
-            //   console.log(viz);
-            // };
-
         };
 
   window.onload = draw("{{ company_name }}");
@@ -195,9 +182,11 @@ function draw(company_id) {
         caption: false
       }
     },
-    initial_cypher: "MATCH (c:Company{CompanyName: '" + company_id + "'})<-[r:INVESTED_IN]-(i)-[r1:INVESTED_IN]->(c1) RETURN c,r,i,r1,c1 LIMIT 10"
+    initial_cypher: "MATCH (c:Company{CompanyName: '" + company_id + "'})<-[r:INVESTED_IN]-(i)-[r1:INVESTED_IN]->(c1) RETURN c,r,i,r1,c1 LIMIT 20"
   }
   console.log(company_id)
+//   initial_cypher =  "MATCH (c:Company{CompanyName: '" + company_id + "'})<-[r:INVESTED_IN]-(i)-[r1:INVESTED_IN]->(c1) RETURN c,r,i,r1,c1 LIMIT 20"
+//   console.log(initial_cypher)
   console.log('drawn')
   var viz = new NeoVis.default(config);
   console.log(typeof viz);
@@ -217,7 +206,7 @@ function draw(company_id) {
 
 };
 
-window.onload = draw("{{ company_id }}");
+window.onload = draw("{{ company_name }}");
 
 function get_url() {
   var url = 'http://localhost:5000/?company-id=' + document.getElementById("company-id").value;

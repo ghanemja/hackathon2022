@@ -18,7 +18,6 @@ def index():
             investors_file = "investors.csv"
             peers_file = "peers.csv"
             industry_file = "company_industry.csv"
-            # score_file = "company_score.csv"
             score_file = "prediction_percentile.csv"
             try:
                 with open(investors_file) as invest:

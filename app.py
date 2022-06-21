@@ -35,9 +35,10 @@ def index():
                             with open(score_file) as scores:
                                 reader = csv.reader(scores)
                                 next(reader, None) # skip headers
-                                score_map = dict((rows[0],rows[2]) for rows in reader)
+                                score_map = dict((rows[0],round(float(rows[2]),3)) for rows in reader)
                                 company_id = name_id_map[company_name]
                                 _company_name = id_name_map[company_id]
+                                
                                 return render_template("index.html", investors=invest, peers=peer, company_id=company_id, company_name=_company_name, selected=selected, industries=industry_map, score=score_map)
             except Exception as e:
                 traceback.print_exc()

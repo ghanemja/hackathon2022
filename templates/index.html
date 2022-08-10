@@ -156,10 +156,12 @@
     <script>
         function draw(company_id) {
             var config = {
-                container_id: "viz",
-                server_url: "neo4j://35.153.103.47:7687",
-                server_user: "neo4j",
-                server_password: "Gupta123!@#",
+                containerId: "viz",
+                neo4j: {
+                    serverUrl: "bolt://44.203.139.45:7687",
+                    serverUser: "neo4j",
+                    serverPassword: "gupta123!@#"
+                },
                 labels: {
                     "Company": {
                         caption: "CompanyName",
@@ -175,7 +177,7 @@
                         caption: false
                     }
                 },
-                initial_cypher: "MATCH (c:Company{CompanyName: '" + company_id + "'})<-[r:INVESTED_IN]-(i)-[r1:INVESTED_IN]->(c1) RETURN c,r,i,r1,c1 LIMIT 10"
+                initialCypher: "MATCH (c:Company{CompanyName: '" + company_id + "'})<-[r:INVESTED_IN]-(i)-[r1:INVESTED_IN]->(c1) RETURN c,r,i,r1,c1 LIMIT 10"
                 // "MATCH p = (i)-[r1:INVESTED_IN]->(c1) LIMIT 50 WITH p MATCH (c:Company{CompanyName: '" + company_id + "' })<-[r:INVESTED_IN]-(p) RETURN c,r,p"
             }
 

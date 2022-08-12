@@ -8,7 +8,9 @@
 
 <head>
     <title>DataViz</title>
-    <script src="https://rawgit.com/neo4j-contrib/neovis.js/master/dist/neovis.js"></script>
+    <script src="https://unpkg.com/neovis.js@2.0.2"></script>
+
+    <!-- <script src="https://rawgit.com/neo4j-contrib/neovis.js/master/dist/neovis.js"></script> -->
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -40,8 +42,7 @@
                             placeholder="Company Name" aria-label="Company ID" aria-describedby="basic-addon2">
                     </div>
                     <div class="col-auto rounded">
-                        <button id="go-button" class="btn rounded bg-primary text-white"
-                            type="button">Go</button>
+                        <button id="go-button" class="btn rounded bg-primary text-white" type="button">Go</button>
                     </div>
                 </div>
             </form>
@@ -125,30 +126,30 @@
             </div>
             <div class='col-6 border shadow' id="viz"></div>
             <!-- <div class="col d-flex justify-content-center"> -->
-            <!-- <div class="row h-100"> -->                
-                <div class="col h-100 border shadow" id="table">
-                    <h2>Potential Investors</h2>
-                    <table class="table">
-                        <thead>
-                            <tr>
-                                <th scope="col">ID</th>
-                                <th scope="col">Name</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            {% for row in investors %}
-                            {% if company_id in row %}
-                            <tr>
-                                {% for col in row.split(",")[2:] %}
-                                <td>{{ col }}</td>
-                                {% endfor %}
-                            </tr>
-                            {% endif %}
+            <!-- <div class="row h-100"> -->
+            <div class="col h-100 border shadow" id="table">
+                <h2>Potential Investors</h2>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">ID</th>
+                            <th scope="col">Name</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for row in investors %}
+                        {% if company_id in row %}
+                        <tr>
+                            {% for col in row.split(",")[2:] %}
+                            <td>{{ col }}</td>
                             {% endfor %}
-                        </tbody>
-                    </table>
-                </div>
+                        </tr>
+                        {% endif %}
+                        {% endfor %}
+                    </tbody>
+                </table>
             </div>
+        </div>
     </div>
     <!-- </div> -->
     <!-- </div> -->
@@ -156,44 +157,92 @@
     <script>
         function draw(company_id) {
             var config = {
-                container_id: "viz",
-                server_url: "neo4j://35.153.103.47:7687",
-                server_user: "neo4j",
-                server_password: "Gupta123!@#",
-                labels: {
-                    "Company": {
-                        caption: "CompanyName",
-                        Color: "#126BC5"
+                containerId: "viz",
+                neo4j: {
+                    serverUrl: "bolt://44.203.139.45:7687",
+                    serverUser: "neo4j",
+                    serverPassword: "gupta123!@#"
+                },
+                visConfig: {
+                    nodes: {
+                        shape: "dot",
+                        size: 10,
                     },
-                    "Investor": {
-                        caption: "InvestorName",
-                        Color: "#eeee"
+                    edges: {
+                        arrows: {
+                            to: { enabled: true }
+                        }
+                    }
+                },
+                labels: {
+                    Company: { // everything that is directly on this object gets mapped from the neo4j node
+                        // full properties list can be found at https://visjs.github.io/vis-network/docs/network/nodes.html
+                        label: "CompanyName", // puts the property `name` from the neo4j node and puts it onto the label property of vis.js's node
+                        value: "pagerank",
+                        group: "community",
+                        [NeoVis.NEOVIS_ADVANCED_CONFIG]: {// here you put node properties that aren't mapped directly from the neo4j node
+                            // cypher: { // everything here will map to the vis.js node object from a cypher query (like sizeCypher worked but for every property)
+                            //     value: "MATCH (n) WHERE id(n) = $id MATCH (n)-[r]-() RETURN sum(r.weight) AS c"
+                            // },
+                            function: { // everything here will map function thats gets the neo4j node properties to a vis.js node property
+                                title: NeoVis.objectToTitleHtml, // alternativly
+                                title: (props) => NeoVis.objectToTitleHtml(props, ["CompanyName"])
+                            },
+                            static: { // everything here will be copied directly to the vis.js's node object
+                                font: {
+                                    size: 26,
+                                    color: "#000000"
+                                },
+                                color: "#97c2fc"
+                            }
+                        }
+                    },
+                    Investor: { // everything that is directly on this object gets mapped from the neo4j node
+                        // full properties list can be found at https://visjs.github.io/vis-network/docs/network/nodes.html
+                        label: "InvestorName", // puts the property `name` from the neo4j node and puts it onto the label property of vis.js's node
+                        value: "pagerank",
+                        group: "community",
+                        [NeoVis.NEOVIS_ADVANCED_CONFIG]: {// here you put node properties that aren't mapped directly from the neo4j node
+                            // cypher: { // everything here will map to the vis.js node object from a cypher query (like sizeCypher worked but for every property)
+                            //     value: "MATCH (n) WHERE id(n) = $id MATCH (n)-[r]-() RETURN sum(r.weight) AS c"
+                            // },
+                            function: { // everything here will map function thats gets the neo4j node properties to a vis.js node property
+                                title: NeoVis.objectToTitleHtml, // alternativly
+                                title: (props) => NeoVis.objectToTitleHtml(props, ["InvestorName"])
+                            },
+                            static: { // everything here will be copied directly to the vis.js's node object
+                                font: {
+                                    size: 26,
+                                    color: "#000000"
+                                },
+                                color: "#FB7E81"
+                            }
+                        }
                     }
                 },
                 relationships: {
-                    "INVESTS_IN": {
-                        caption: false
+                    INVESTED_IN: { // same as node but mapped from neo4j relationship to vis.js edge
+                        // full properties list can be found at https://visjs.github.io/vis-network/docs/network/edges.html
+                        value: "5",
+                        // the default is now without caption
+                        [NeoVis.NEOVIS_ADVANCED_CONFIG]: {// here you put edge properties that aren't mapped directly from the neo4j relationship
+                            // cypher: {}, // same as label advance cypher
+                            function: { // same as label advance function
+                                title: NeoVis.objectToTitleHtml // putting caption on the title
+                            },
+                            static: {
+                                color: "#9ad6aa",
+                                value: 1,
+                            } // same as label advance static
+                        }
                     }
                 },
-                initial_cypher: "MATCH (c:Company{CompanyName: '" + company_id + "'})<-[r:INVESTED_IN]-(i)-[r1:INVESTED_IN]->(c1) RETURN c,r,i,r1,c1 LIMIT 10"
-                // "MATCH p = (i)-[r1:INVESTED_IN]->(c1) LIMIT 50 WITH p MATCH (c:Company{CompanyName: '" + company_id + "' })<-[r:INVESTED_IN]-(p) RETURN c,r,p"
+                initialCypher: "MATCH (c:Company{CompanyName: '" + company_id + "'})<-[r:INVESTED_IN]-(i)-[r1:INVESTED_IN*0..2]->(c1) RETURN c,r,i,r1,c1 LIMIT 50"
             }
 
-            console.log("MATCH (c:Company{CompanyName: '" + company_id + "'})<-[r:INVESTED_IN]-(i)-[r1:INVESTED_IN*0..2]->(c1) RETURN c,r,i,r1,c1 LIMIT 50")
+            // console.log("MATCH (c:Company{CompanyName: '" + company_id + "'})<-[r:INVESTED_IN]-(i)-[r1:INVESTED_IN*0..2]->(c1) RETURN c,r,i,r1,c1 LIMIT 50")
             var viz = new NeoVis.default(config);
             viz.render();
-            // viz._nodes[0].shape = "star";
-            // TODO
-            // as call back to render
-            // got through nodes .label and find company name
-            // change that nodes color
-
-            // async () => {
-            //   var viz = new NeoVis.default(config);
-            //   await viz.render();
-            //   console.log(viz);
-            // };
-
         };
 
         window.onload = draw("{{ company_name }}");
